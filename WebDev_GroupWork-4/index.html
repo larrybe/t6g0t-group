@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Game of Thrones Theme Park</title>
-        <meta name="homepage" content="Game of Thrones Theme Park">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="main.css">
-        <script type="text/javascript" src="interactive.js"></script>
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game of Thrones Theme Park</title>
+    <meta name="homepage" content="Game of Thrones Theme Park">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="interactive.js"></script>
+</head>
+
+<body>
+    <header>
         <!-- covid warning-->
-        <h1>Important Information: due to ongoing Covid-19 pandemic, some of our offers or attractions might not be available. please follow the hygiene advices from the local governement.</h1>
+        <h1>Important Information: due to ongoing Covid-19 pandemic, some of our offers or attractions might not be
+            available. please follow the hygiene advices from the local governement.</h1>
 
         <!--logo pic-->
-        <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Game_of_Thrones_Season_8.png" alt="game of thrones logo" width="100" height="100">
+        <img src="assets/logo.png" alt="game of thrones logo">
 
         <!--navigation bar including all 3 pages and a search box-->
         <div class="topnav">
@@ -26,62 +28,63 @@
             &nbsp;
             <a href="sign_in.html"> Personal Itinerary </a>
             &nbsp;
+    </header>
+    <!--ticket search box-->
+    <div class="search-container">
+        <input type="text" placeholder="Search ticket.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    </div>
 
-            <!--ticket search box-->
-            <div class="search-container">
-                <input type="text" placeholder="Search ticket.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>  
-            </div>
+
+    <!-- heros list with pictures -->
+    <h2>Heros</h2>
+
+    <div class="heros">
+        <ol>
+            <li <h3>Jon Snow</h3> <br> <img src="assets/jon_snow.jpg" width="400" height="200"></li>
+            <li <h3>Daenerys Targaryen</h3> <br> <img src="assets/daenerys_targaryen.jpg" width="400" height="200"></li>
+            <li <h3>Mance Rayder</h3> <br> <img src="assets/mance_rayder.jpg" width="400" height="200"></li>
+        </ol>
+    </div>
+
+    <!--slideshow container source w3school -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets\background\1.jpg" style="width:100%">
+            <div class="text">cool pic 1</div>
         </div>
 
-          
-        <!-- heros list with pictures --> 
-        <h2>Heros</h2>
-        
-        <div class="heros">
-            <ol>
-                <li <h3>Jon Snow</h3> <br> <img src="assets/jon_snow.jpg" width="400" height="200"></li>
-                <li <h3>Daenerys Targaryen</h3> <br> <img src="assets/daenerys_targaryen.jpg" width="400" height="200"></li>
-                <li <h3>Mance Rayder</h3> <br> <img src="assets/mance_rayder.jpg" width="400" height="200"></li>
-            </ol>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets\background\2.jpg" style="width:100%">
+            <div class="text">cool pic 2</div>
         </div>
 
-        <!--slideshow container source w3school -->
-        
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="assets\background\1.jpg" style="width:100%">
-                <div class="text">cool pic 1</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="assets\background\2.jpg" style="width:100%">
-                <div class="text">cool pic 2</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="assets\background\3.jpg" style="width:100%">
-                <div class="text">cool pic 3</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-            
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets\background\3.jpg" style="width:100%">
+            <div class="text">cool pic 3</div>
         </div>
 
-          
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    </body>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+</body>
+
 </html>
