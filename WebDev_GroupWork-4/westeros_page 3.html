@@ -1,0 +1,63 @@
+<!--We chose a sign-in page because it so crucial to a modern theme park. It is where the potential visitor buys in to the theme park and engages very personally. This is an action/commitment page rather than a inforamation page.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westeros account login</title>
+</head>
+<body>
+    <section id="signIn">
+        <form action="http://www.westeros.com/login/" method="post">
+            <fieldset>   <!--we used a fieldset to distinguish the different forms. This will be enhanced using CSS, but the page layout will be very simple so as not to distract users from signing in.--> 
+                <img src="assets/logo.png" alt="Westeros Northern Island logo of black celtic font spelling Westeros Northern Ireland" width=200 height=50><!--extended alt description for accessibility -->
+                <h1>Sign in</h1>
+                <details>
+                    <summary>Info</summary>
+                    <p>Welcome back! You may use your login details for either your Westeros account or your HBO streaming account</p>
+                </details> 
+                <!--<label for="email">Email Address:</label>-->
+                <input placeholder="Enter Email Address" type="email" id="email" name="email" required="required"><br><!--"required" creates an error message if no input entered in this field when user hits "submit" . The field will also be highlighted in red, but this is added later with CSS ("invalid/valid")-->
+                <!--<label for="password">Password:</label>-->
+                <input placeholder="Enter Password" type="password" id="pwd" name="pwd" required="required"><br><br>
+                <!--"required" creates error message if no input entered in this field when user hits "submit". The field will also be highlighted in red, but this is added later with CSS ("invalid/valid")-->
+                <input type="checkbox" name="keepMe" value="yes" />Keep me logged in<br><br><!--JS for action call up new page to be added-->
+                <input type="submit" name="submit_button" value="Sign in">
+                <input type="reset" value="Clear"><br><br>
+                <!--<button onclick="window.location.href="https://www.westeros.com/login/">Cancel</a> </button><br><br><if user presses "cancel", page is refreshed-->
+                <a href="https://www.westeros.com/sign-in_help">Need help signing in?</a><br><br><!--directs user to help page where can ask for password reminder/reset etc.-->  
+            </fieldset>
+        </form> 
+    </section>
+    <hr>
+    <section id="sign-up">
+        <h2>Sign up with Westeros</h2>
+        <form action="https://www.westeros.com/create_account"><!--on click, will direct user to create account page. very important page for us, so this button will be made very visible with CSS. -->
+            <button type="submit">Create a new account</button><br><br>  
+        </form>
+    </section>
+    <aside>
+        <div class="chat-popup" id="chatMessage"><!--we want people to create accounts!  Customers using desktop will mainly be Baby Boomers who want simple information fast.  They trust Facebook, not Youtube and company-made information rather than peer-made information, so we have offered a chatbox for info direct from our customer service representatives and a link to a company-made video summary of the sign-up process (and benefits) on Facebook-->
+            <form action="/action_page.php" class="form-container">
+                  <h3>Chat</h3>
+                    <textarea placeholder="Type your message here...Available from 8.30AM to...8.30PM GMT." name="msg" required></textarea><br><br><!--text area will be enlarged so whole placeholder is visible using css. input of a message by the user is "required" which means that if they do not do so and then hit submit an error message is triggered-->
+                    <button type="submit">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close Chat</button><br><br>
+            </form>
+        </div>
+        <div id="facebookVideo">
+            <a href="https://www.facebook.com/pg/Westeros/videos/sign_up_Westeros">Westeros on Facebook page: "Watch our simple video: How to sign up with Westeros"</a>       
+        </div>
+     </aside>
+    <hr>
+    <nav>       
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a><!--we need balance between convenience for user but also simplicity/streamlining of log-in page. Some theme park websites (e.g. Disney) have no nav links on sign-in page at all but we think this may frustrate the user.  We put the link at the end of the page as it is a "last resort" for the user.-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+</body>
+<!--no footer so as to emphasise simple threshold action of sign-in page. We don't want to distract users from signing in-->
+</html>
