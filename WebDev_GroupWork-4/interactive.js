@@ -1,39 +1,20 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+// covid warning message collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-function plusSlides(n) 
+for (i = 0; i < coll.length; i++) 
 {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) 
-{
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) 
-{
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) 
+    coll[i].addEventListener("click", function() 
     {
-        slideIndex = 1;
-    }  
-
-    if (n < 1) 
-    {
-        slideIndex = slides.length;
-    }
-
-    for (i = 0; i < slides.length; i++)
-    {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) 
-    {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") 
+        {
+            content.style.display = "none";
+        } 
+        else 
+        {
+            content.style.display = "block";
+        }
+    });
 }
