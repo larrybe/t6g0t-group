@@ -1,78 +1,107 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Game of Thrones Theme Park</title>
-    <meta name="parks_tickets" content="about the theme park and tickets booking">
-    <!-- <link rel="stylesheet" href="main.css"> -->
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Game of Thrones Theme Park</title>
+        <meta name="parks_tickets" content="about the theme park and tickets booking">
+        <!-- <link rel="stylesheet" href="main.css"> -->
+    </head>
 
-<body>
-    <header>
-        <!--logo pic-->
-        <div id="logo">
-            <img src="assets/logo.png" alt="game of thrones logo">
+    <body>
+        <header>
+            <!--logo pic-->
+            <div id="logo">
+                <img src="assets/logo.png" alt="game of thrones logo">
+            </div>
+
+            <!--navigation bar including all 3 pages and a search box-->
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Homepage </a></li>
+                    <li><a href="parks_tickets.html"> Parks and Tickets </a></li>
+                    <li><a href="sign_in.html"> Sign In </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="call-to-action-1">
+            <p>Book now and save.</p>
         </div>
 
-        <!--navigation bar including all 3 pages and a search box-->
-        <nav>
-            <ul>
-                <li><a href="index.html"> Homepage </a></li>
-                <li><a href="parks_tickets.html"> Parks and Tickets </a></li>
-                <li><a href="sign_in.html"> Sign In </a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="call-to-action-1">
-        <p>Book now and save.</p>
-    </section>
-
-    <section id="tickets-hero">
-        <img src="assets/photos/redkeep.jpeg" width="100%">
-        <p>Your ticket to the world of Westeros.</p>
-    </section>
-
-    <section id="call-to-action-1">
-        <p>Winter is Comming. Book now to save 35%.</p>
-    </section>
-
-    <section id="booking-area">
-        <h3>Tickets</h3>
-        <div id="booking-form">
-            <h4>Book your holiday</h4>
-            <form>
-                <label for="from-date">Check In</label>
-                <input type="date" id="from-date" value="2021-07-03">
-                <label for="to-date">Check Out</label>
-                <input type="date" id="to-date" value="2021-07-07">
-                <label for="adult-tickets">Adults</label>
-                <input type="number" id="adult-tickets" value="1">
-                <label for="child-tickets">Children</label>
-                <input type="number" id="child-tickets" value="0">
-                <input type="checkbox" id="accessible-rooms">
-                <label for="accessible-rooms">Accessible Rooms</label>
-            </form>
+        <div id="tickets-hero">
+            <img src="assets/photos/redkeep.jpeg" width="1280" alt="Your ticket to the world of Westeros.">
+            <p>Your ticket to the world of Westeros.</p>
         </div>
-        <div id="booking-summary">
-            <h4>Summary</h4>
-            <p>4 days</p>
-            <p>1 Adult</p>
-            <p>0 Children</p>
-            <p>Total: &#163 123.45</p>
-        </div>
-        <div id="booking-submit">
-            <button>Submit</button>
-        </div>
-    </section>
 
-    <section id="booking-assistance">
-        <p>For assistance with your vacation, including resort/package bookings and tickets, 
-            please call (555) 555-0123.</p>
-        <p>7:00 AM to 11:00 PM BST</p>
-    </section>
+        <div id="call-to-action-2">
+            <p>Winter is Comming. Book now to save 35%.</p>
+        </div>
 
-</body>
+        <div id="booking-promos">
+            <div id="promo-one">
+                <img src="assets/castle.jpg" width="150" alt="park photo">
+                <h4>Theme Park Ticket Options</h4>
+                <p>Affordable and VIP options avvailable.</p>
+            </div>
+            <div id="promo-two">
+                <img src="assets/photos/hotel.webp" width="150" alt="hotel photo">
+                <h4>Bundle and Save</h4>
+                <p>Book your park visit and hotel stay stay together
+                    for additional savings.</p>
+            </div>
+            <div id="promo-three">
+                <img src="assets/photos/hedges.jpeg" width="150" alt="Enter the world of GOT">
+                <h4>Enter the World of GOT</h4>
+                <p>The most immersive Game of Thrones experience to date.</p>
+            </div>
+        </div>
+
+        <section id="booking-area">
+            <h3>Tickets</h3>
+            <div id="booking-form-div">
+                <h4>Book your holiday</h4>
+                <form id="booking-form">
+                    <label for="from-date">Check In</label>
+                    <input type="date" id="from-date" value="2021-07-03">
+                    <label for="to-date">Check Out</label>
+                    <input type="date" id="to-date" value="2021-07-07">
+                    <label for="adult-tickets">Adults</label>
+                    <input type="number" id="adult-tickets" value="1">
+                    <label for="child-tickets">Children</label>
+                    <input type="number" id="child-tickets" value="0">
+                    <input type="checkbox" id="accessible-rooms">
+                    <label for="accessible-rooms">Accessible Rooms</label>
+                </form>
+            </div>
+            <div id="booking-summary">
+                <h4>Summary</h4>
+                <p>4 days</p>
+                <p>1 Adult Ticket</p>
+                <p>0 Children's Ticket</p>
+                <p>Total: &#163; 123.45</p>
+            </div>
+            <div id="booking-submit">
+                <input type="submit" form="booking-form" value="book">
+            </div>
+        </section>
+
+        <section id="booking-disclaimer">
+            <h3>Disclaimer</h3>
+            <p>Prices quoted above are only valid for the number of Guests, check-in
+                dates and length of stay shown. They do not include other costs you may
+                choose to incur during your stay.
+            </p>
+        </section>
+
+        <section id="booking-assistance">
+            <h3>Need help?</h3>
+            <p>For assistance with your vacation, including resort/package bookings and tickets,
+                please call (555) 555-0123.</p>
+            <p>7:00 AM to 11:00 PM BST</p>
+        </section>
+
+    </body>
 
 </html>
