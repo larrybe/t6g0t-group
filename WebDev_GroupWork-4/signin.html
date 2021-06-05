@@ -1,5 +1,6 @@
-<!--We chose a sign-in page because it so crucial to a modern theme park. It is where the potential visitor buys in to the theme park and engages very personally. This is an action/commitment page rather than a inforamation page.-->
-
+<!--We chose a sign-in page because it so crucial to a modern theme park. It is where the potential visitor buys in to the theme park and engages very actively. This is an action/commitment page rather than a inforamation page
+I've commented this code for someone of my level of knowledge, a learner who wants as simple information about the structure and what it means as possible. I also wanted to make it very easy to find the different sections.-->
+ 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,36 +11,69 @@
     <title>Westeros account login</title>
 </head>
 <body>
+    
+    <!--header with logo-->
+    <header>
+        <img src="assets/logo.png" alt="Westeros Northern Island logo of black celtic font spelling Westeros Northern Ireland" width=200 height=50><!--extended alt description for accessibility -->
+    </header>
+    
+    <!--sign in section-->
+    
     <section id="signIn">
+        
+    <!--start of sign-in form-->
+    <!--action link for sign-in form -->
         <form action="http://www.westeros.com/login/" method="post">
-            <fieldset>   <!--we used a fieldset to distinguish the different forms. This will be enhanced using CSS, but the page layout will be very simple so as not to distract users from signing in.--> 
-                <img src="assets/logo.png" alt="Westeros Northern Island logo of black celtic font spelling Westeros Northern Ireland" width=200 height=50><!--extended alt description for accessibility -->
+    <-!--start of sign-in form container ("field set")-->
+            <fieldset>   <!--we used a fieldset to structure a form with multiple fields. This will be enhanced using CSS, but the page layout will be very simple so as not to distract users from signing-in--> 
+    <!--title of sign-in section-->           
                 <h1>Sign in</h1>
+    <!--start of drop down info box about sign-in -->
                 <details>
+    <!--drop down info box title-->
                     <summary>Info</summary>
+    <!--drop down info box contents-->
                     <p>Welcome back! You may use your login details for either your Westeros account or your HBO streaming account</p>
                 </details> 
-                <!--<label for="email">Email Address:</label>-->
+    <!--end of sign-in box-->
+        
+    <!--start of sign-in form fields-->
+    <!--email address input box-->
                 <input placeholder="Enter Email Address" type="email" id="email" name="email" required="required"><br><!--"required" creates an error message if no input entered in this field when user hits "submit" . The field will also be highlighted in red, but this is added later with CSS ("invalid/valid")-->
-                <!--<label for="password">Password:</label>-->
+    <!--password input box-->     
                 <input placeholder="Enter Password" type="password" id="pwd" name="pwd" required="required"><br><br>
-                <!--"required" creates error message if no input entered in this field when user hits "submit". The field will also be highlighted in red, but this is added later with CSS ("invalid/valid")-->
-                <input type="checkbox" name="keepMe" value="yes" />Keep me logged in<br><br><!--JS for action call up new page to be added-->
+                <!--"required" creates error message if no input has been entered in this field when user hits "submit". The field will also be highlighted in red, but this will be added later with CSS ("invalid/valid")-->
+    <!--remember me check box-->
+                <input type="checkbox" name="keepMe" value="yes" />Keep me logged in<br><br><!--places a cookie on the user's browser to record user input on the form. JS for action call up new page to be added-->
+    <!--sign-in submit button-->
                 <input type="submit" name="submit_button" value="Sign in">
-                <input type="reset" value="Clear"><br><br>
-                <!--<button onclick="window.location.href="https://www.westeros.com/login/">Cancel</a> </button><br><br><if user presses "cancel", page is refreshed-->
-                <a href="https://www.westeros.com/sign-in_help">Need help signing in?</a><br><br><!--directs user to help page where can ask for password reminder/reset etc.-->  
+    <!--sign-in clear button-->
+                <input type="reset" value="Clear"><br><br
             </fieldset>
-        </form> 
+     <!--end of sign-in form fields-->
+        </form>
+     <!--end of sign-in form-->
+    
     </section>
+    <!--end of sign-in section-->
+   
+    <!--break for new section-->
     <hr>
+    
+    <!--start of sign-up section-->
     <section id="sign-up">
+    <!--title of sign-up section-->
         <h2>Sign up with Westeros</h2>
+    <!--action link for sign-up form-->
         <form action="https://www.westeros.com/create_account"><!--on click, will direct user to create account page. very important page for us, so this button will be made very visible with CSS. -->
             <button type="submit">Create a new account</button><br><br>  
         </form>
+    <!--end of sign-up form-->
     </section>
+    <--end of sign-up form section-->
+    <!--aside to sign-up section-->
     <aside>
+    <!--start of chatbox for sign-up form-->
         <div class="chat-popup" id="chatMessage"><!--we want people to create accounts!  Customers using desktop will mainly be Baby Boomers who want simple information fast.  They trust Facebook, not Youtube and company-made information rather than peer-made information, so we have offered a chatbox for info direct from our customer service representatives and a link to a company-made video summary of the sign-up process (and benefits) on Facebook-->
             <form action="/action_page.php" class="form-container">
                   <h3>Chat</h3>
@@ -48,16 +82,23 @@
                     <button type="button" class="btn cancel" onclick="closeForm()">Close Chat</button><br><br>
             </form>
         </div>
+   <!--end of chatbox for sign-up form-->
+   <!--start of link to sign-up video-->
         <div id="facebookVideo">
             <a href="https://www.facebook.com/pg/Westeros/videos/sign_up_Westeros">Westeros on Facebook page: "Watch our simple video: How to sign up with Westeros"</a>       
         </div>
+   <!--end of link to sign-up video-->
      </aside>
+   <!--end of aside to sign-up section-->
+   <!--break in sign-up form section-->
     <hr>
+   <!--start of mini nav bar to sign-in form section-->
     <nav>       
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a><!--we need balance between convenience for user but also simplicity/streamlining of log-in page. Some theme park websites (e.g. Disney) have no nav links on sign-in page at all but we think this may frustrate the user.  We put the link at the end of the page as it is a "last resort" for the user.-->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
+    <!--end of mini nav bar to sign-in form section-->
 </body>
 <!--no footer so as to emphasise simple threshold action of sign-in page. We don't want to distract users from signing in-->
 </html>
