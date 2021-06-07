@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Game of Thrones Theme Park</title>
-        <meta name="homepage" content="Game of Thrones Theme Park">
-    </head>
 
-    <body>
-        <!-- covid warning-->
-        <button type="button" class="collapsible"> 
-            Covid-19 Information 
-            <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html"> Learn More </a> 
-        </button>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game of Thrones Theme Park</title>
+    <meta name="homepage" content="Game of Thrones Theme Park">
+    <link rel="stylesheet" href="main.css">
+</head>
 
-        <!--logo pic-->
-        <img src="assets/logo.png" alt="theme park logo" width="300" height="100">
+<body>
+    <div class="container">
+        <header>
+            <!-- covid warning-->
+            <div id="covid-info">
+                <p>Covid-19 Information
+                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html"> Learn More
+                    </a>
+                </p>
+            </div>
+            <!--logo pic-->
+            
 
-        <!--navigation bar including all 3 pages-->
-        <div class="topnav">
-            <a href="index.html"> Attractions </a>
-            &nbsp;
-            <a href="parks_tickets.html"> Tickets </a>
-            &nbsp;
-            <a href="signin.html"> Sign in </a>
-            &nbsp;
-        </div>
+            <!--navigation bar including all 3 pages and a search box-->
+            <nav>
+                <div class="logo">
+                <img src="assets/logo.png" alt="game of thrones logo">
+            </div>
+
+                <ul>
+                    <li><a href="index.html"> Homepage </a></li>
+                    <li><a href="parks_tickets.html"> Tickets </a></li>
+                    <li><a href="signin.html"> Sign In </a></li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- main content of the page -->
         <main>
             <!-- center of the page with key attraction and description -->
-            <div class="Attraction Description">
+            <div class="attraction-description">
+                <img src="assets/redkeep.jpeg"  alt="Picture of the Red Keep">
                 <h2>title of description</h2>
                 <p class="description">placeholder for the content of attraction description</p>
-                <img src="assets/redkeep.jpeg" width="device-width" height="20%" alt="Picture of the Red Keep">
             </div>
-            
+
             <!-- promotional offer with a purchase box link -->
-            <div>
-            <h2>Tickets on Sale now</h2>
-            <a href="parks_tickets.html"> <button>Purchase Tickets</button> </a>
-            <p class="description">placeholder for detailed offers</p>
+            <div class="tickets-on-sale">
+                <h2>Tickets on Sale now</h2>
+                <a href="parks_tickets.html"> <button>Purchase Tickets</button> </a>
+                <p class="description">placeholder for detailed offers</p>
             </div>
 
             <!-- more information on the theme park before you travel -->
             <div>
-            <h2>What to know before you go.</h2>
-            <p class="description"> placeholder for description</p>
-            <p class="description"> placeholder for description</p>
-            <img src="assets/d7.jpeg" width="70%" height="20%" alt="Picture of an informational sign about Game of Thrones">
-            <img src="assets/coaster.jpeg" width="30%" height="20%" alt="Picture of roller coaster">
-            <img src="assets/dragons.jpeg" width="33%" height="20%" alt="picture of dragons">
+                <h2>What to know before you go.</h2>
+                <p class="description"> placeholder for description</p>
+                <p class="description"> placeholder for description</p>
+                <img src="assets/d7.jpeg" width="70%" height="20%"
+                    alt="Picture of an informational sign about Game of Thrones">
+                <img src="assets/coaster.jpeg" width="30%" height="20%" alt="Picture of roller coaster">
+                <img src="assets/dragons.jpeg" width="33%" height="20%" alt="picture of dragons">
             </div>
 
             <!-- things need to be reserved -->
             <div>
-            <h2>Make a Westerwold Pass Reservation</h2>
-            <p class="description"> placeholder for description</p>
-            <img src="assets/hedges.jpeg" width="100%" height="400">
-            <img src="assets/GoT+Purple+Wedding.jpeg" width="33%" height="20%" alt="purple wedding">
-            <img src="assets/IMG_3224-2.jpeg" width="33%" height="20%" alt="Game of Thrones themed restaurant">
-        </div>
+                <h2>Make a Westerwold Pass Reservation</h2>
+                <p class="description"> placeholder for description</p>
+                <img src="assets/hedges.jpeg" width="100%" height="400">
+                <img src="assets/GoT+Purple+Wedding.jpeg" width="33%" height="20%" alt="purple wedding">
+                <img src="assets/IMG_3224-2.jpeg" width="33%" height="20%" alt="Game of Thrones themed restaurant">
+            </div>
 
             <!-- latest main attraction -->
             <div>
-            <h2>Latest Main Attraction</h2>
-            <p class="description">placeholder for description</p>
-            <img src="assets/Presse_Phantasialand_mystery_01_1920x1280.jpeg" width="70%" height="20%" alt="Theme park picture">
+                <h2>Latest Main Attraction</h2>
+                <p class="description">placeholder for description</p>
+                <img src="assets/Presse_Phantasialand_mystery_01_1920x1280.jpeg" width="70%" height="20%"
+                    alt="Theme park picture">
             </div>
 
             <!-- Shops -->
             <div>
-            <h2>Shop, Plan and Play</h2>
-            <img src="assets/HBOMaxBanner.png" width="100%" height="20%" alt="HBO Max Banner">
+                <h2>Shop, Plan and Play</h2>
+                <img src="assets/HBOMaxBanner.png" width="100%" height="20%" alt="HBO Max Banner">
             </div>
             <p class="description">placeholder for shop 1 </p>
             <p class="description">placeholder for shop 2 </p>
             <p class="description">placeholder for shop 3 </p>
+        </main>
+    </div>
+</body>
 
-
-        </main>   
-
-          
-
-
-    </body>
 </html>

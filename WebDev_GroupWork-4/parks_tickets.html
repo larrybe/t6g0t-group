@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Game of Thrones Theme Park</title>
-        <meta name="parks_tickets" content="about the theme park and tickets booking">
-        <!-- <link rel="stylesheet" href="main.css"> -->
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game of Thrones Theme Park</title>
+    <meta name="parks_tickets" content="about the theme park and tickets booking">
+    <link rel="stylesheet" href="tickets.css">
+</head>
 
-    <body>
+<body>
+    <div class="container">
         <header>
-            <!--logo pic-->
-            <div id="logo">
-                <img src="assets/logo.png" alt="game of thrones logo">
+            <!-- covid warning-->
+            <div id="covid-info">
+                <p>Covid-19 Information
+                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html"> Learn More
+                    </a>
+                </p>
             </div>
+            <!--logo pic-->
+            
 
             <!--navigation bar including all 3 pages and a search box-->
             <nav>
+                <div class="logo">
+                <img src="assets/logo.png" alt="game of thrones logo">
+            </div>
+
                 <ul>
                     <li><a href="index.html"> Homepage </a></li>
                     <li><a href="parks_tickets.html"> Tickets </a></li>
@@ -33,7 +43,7 @@
 
         <!--An eye catching picture-->
         <div id="tickets-hero">
-            <img src="assets/redkeep.jpeg" width="1280" alt="Your ticket to the world of Westeros.">
+            <img src="assets/redkeep.jpeg" alt="Your ticket to the world of Westeros.">
             <p>Your ticket to the world of Westeros.</p>
         </div>
 
@@ -46,19 +56,25 @@
         <div id="booking-promos">
             <div id="promo-one">
                 <img src="assets/castle.jpg" width="150" alt="park photo">
+                <div>
                 <h4>Theme Park Ticket Options</h4>
-                <p>Affordable and VIP options avvailable.</p>
+                <p>Affordable and VIP options available.</p>
+            </div>
             </div>
             <div id="promo-two">
                 <img src="assets/hotel.webp" width="150" alt="hotel photo">
+                <div>
                 <h4>Bundle and Save</h4>
                 <p>Book your park visit and hotel stay stay together
                     for additional savings.</p>
+                </div>
             </div>
             <div id="promo-three">
                 <img src="assets/hedges.jpeg" width="150" alt="Enter the world of GOT">
+                <div>
                 <h4>Enter the World of GOT</h4>
                 <p>The most immersive Game of Thrones experience to date.</p>
+            </div>
             </div>
         </div>
 
@@ -102,13 +118,17 @@
         </section>
 
         <!--Instructions for those who need assistance-->
-        <section id="booking-assistance">
+        <section id="booking-help">
             <h3>Need help?</h3>
             <p>For assistance with your vacation, including resort/package bookings and tickets,
                 please call (555) 555-0123.</p>
             <p>7:00 AM to 11:00 PM BST</p>
         </section>
 
-    </body>
+        <footer>
+            <!--TODO-->
+        </footer>
+    </div>
+</body>
 
 </html>

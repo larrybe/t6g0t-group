@@ -1,3 +1,152 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "main";
+}
+
+header{
+  box-sizing: border-box;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "covidInfo"
+    "navBar";
+  box-shadow: -5px 2px 5px #d1d1d1;
+}
+
+header > *{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-areas: 
+    "covidInfo"
+    "navBar"; */
+  /* grid-template-columns: 10% auto auto 10%;
+  grid-template-areas: 
+    ". covidP covidP ."
+    ". logo navlinks ."; */
+}
+
+#covid-info{
+  background-color: #47A1F5;
+  color: #fff;
+  grid-area: covidInfo;
+  justify-items: center;
+}
+
+#covid-info p{
+  margin: 0;
+  padding: 5px 0;
+  width: 80%;
+  font-size: 18px;
+}
+
+#covid-info p a{
+  color: #fff;
+}
+
+nav{
+  grid-area: navBar;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  width: 80%;
+  padding: 4px 0;
+}
+
+.logo{
+  /* grid-area: logo;
+  justify-items: center; */
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.logo img{
+  width: 12em;
+}
+
+
+nav ul{
+  justify-self: end;
+  list-style-type: none;
+  grid-row: 1;
+  grid-column: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0 24px;
+}
+
+main{
+  grid-area: main;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "attraction-description"
+    "tickets-on-sale"
+}
+
+.attraction-description{
+  grid-area: attraction-description;
+  display: grid;
+}
+
+
+
+.attraction-description img{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.attraction-description h2, .attraction-description p{
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.attraction-description h2{
+  margin: 10% 0;
+  font-size: 36px;
+}
+
+.attraction-description p{
+  margin: 13% 0;
+  font-size: 28px;
+}
+
+.tickets-on-sale{
+  grid-area: tickets-on-sale;
+  text-align: center;
+}
+
+.tickets-on-sale h2{
+  margin-bottom: 5px;
+}
+
+.tickets-on-sale button{
+  background-color: #47A1F5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+/* 
 h1
 {
   	background: black;
@@ -13,10 +162,10 @@ h1
 .heros
 {
    font-size: 30px;
-}
+} */
 
 /* Style the button that is used to open and close the collapsible content */
-.collapsible {
+/* .collapsible {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -26,18 +175,18 @@ h1
   text-align: left;
   outline: none;
   font-size: 15px;
-}
+} */
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+/* .active, .collapsible:hover {
   background-color: #ccc;
-}
+} */
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
+/* .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
-}
+} */
 
