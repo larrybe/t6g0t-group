@@ -101,6 +101,7 @@ html, body{
       "what-to-know"
       "experiences"
       "drogon"
+      "set-tour"
       "dining"
       "shop";
   }
@@ -271,6 +272,47 @@ html, body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#set-tour{
+  grid-area: set-tour;
+  display: grid;
+    grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
+    grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
+    grid-template-areas:
+        ". heading heading heading ." 
+        ". map-room map-room props-sword ."
+        ". costume-daenerys costume-tywin desc .";
+}
+
+#set-tour img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#set-tour h2{
+  grid-area: heading;
+}
+
+#set-tour p{
+  grid-area: desc;
+}
+
+#set-map-room{
+  grid-area: map-room;
+}
+
+#costume-tywin{
+  grid-area: costume-tywin;
+}
+
+#costume-daenerys{
+  grid-area: costume-daenerys;
+}
+
+#props-sword{
+  grid-area: props-sword;
 }
 
 #dining{
