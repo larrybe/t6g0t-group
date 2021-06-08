@@ -8,6 +8,7 @@
     <title>Game of Thrones Theme Park</title>
     <meta name="homepage" content="Game of Thrones Theme Park">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -54,41 +55,113 @@
             </div>
 
             <!-- more information on the theme park before you travel -->
-            <div>
+            <div id="what-to-know">
                 <h2>What to know before you go.</h2>
-                <p class="description"> placeholder for description</p>
-                <p class="description"> placeholder for description</p>
-                <img src="assets/d7.jpeg" width="70%" height="20%"
-                    alt="Picture of an informational sign about Game of Thrones">
-                <img src="assets/coaster.jpeg" width="30%" height="20%" alt="Picture of roller coaster">
-                <img src="assets/dragons.jpeg" width="33%" height="20%" alt="picture of dragons">
+                <div class="description" id="wtkDesc1">
+                    <h3>The most immersive Game of Thrones experience yet.</h3>
+                    <p>Planned and built by the people who brought you the most famous TV series of 
+                        all time, Westeros Northern Ireland places you in the fantastical and thrilling 
+                        world of Game of Thrones. Built within minutes of many of the filming 
+                        locations used in the production of the TV series Westeros Northern Ireland 
+                        will feel familiar to all fans of the show.</p>
+                </div>
+                <div class="description" id="wtkDesc2">
+                    <h3>Make your reservation</h3>
+                    <!--Adapted from the Disney World website-->
+                    <p>Both a valid ticket and a park reservation is required to enter the theme park.
+                        Schedule your park visit with the park reservation system.
+                        Park reservation availablility is limited, not guaranteed and subject to change.
+                    </p>
+                    <a href="parks_tickets.html">Make A Reservation</a>
+                </div>
+                <img src="assets/d7.jpeg" alt="Picture of an informational sign about Game of Thrones" id="wtkImg1">
+                <img src="assets/Presse_Phantasialand_mystery.jpeg" alt="Picture of roller coaster" id="wtkImg2">
+                <img src="assets/dragons.jpeg" alt="picture of dragons" id="wtkImg3">
             </div>
 
-            <!-- things need to be reserved -->
-            <div>
-                <h2>Make a Westerwold Pass Reservation</h2>
-                <p class="description"> placeholder for description</p>
-                <img src="assets/hedges.jpeg" width="100%" height="400">
-                <img src="assets/GoT+Purple+Wedding.jpeg" width="33%" height="20%" alt="purple wedding">
-                <img src="assets/IMG_3224-2.jpeg" width="33%" height="20%" alt="Game of Thrones themed restaurant">
+            <!-- Experiences and Attractions at the theme park -->
+            <div id="experiences">
+                <h2>Experiences and Attractions</h2>
+                <div class="experience" id="wildfire-show">
+                    <img src="assets/wildfire.jpeg" alt="wildfire explosion" id="wildfire-img">
+                    <div>
+                    <h3>The WildFireWorks Show</h3>
+                    <p>Every Saturday night. Experience being at the Battle of the Blackwater with the
+                        most spectacular and innovative fireworks show on earth.</p>
+                    </div>
+                </div>
+                <div class="experience" id="axe-throw">
+                    <img src="assets/axe01.jpeg" alt="Tyrion's Axe Throw" id="purple-wedding-img">
+                    <div>
+                    <h3>Tyrion's Axe Throw</h3>
+                    <p>Learn to weild the weapon of choice for Tyrion Lannister.</p>
+                    </div>
+                </div>
+                <div class="experience" id="purple-wedding">
+                    <img src="assets/GoTPurpleWedding.jpeg" alt="Scene from the purple wedding" id="purple-wedding-img">
+                    <div>
+                    <h3>Purple Wedding Reinactment</h3>
+                    <p>Be a guest at the second most memorable wedding in TV history.</p>
+                    </div>
+                </div>
+                <div class="experience" id="archery-winterfell">
+                    <img src="assets/archery-at-winterfell.jpeg" alt="archery at winterfell experience" id="archery-winterfell-img">
+                    <div>
+                    <h3>Archery at Winterfell</h3>
+                    <p>Have an Archery lesson from Winterfell's master-at-arms.</p>
+                    </div>
+                </div>
+                <div class="experience" id="dark-hedges">
+                    <img src="assets/hedges.jpeg" alt="dark hedges" id="dark-hedges-img">
+                    <div>
+                    <h3>Dark Hedges Tunnel</h3>
+                    <p>Planned and built by the people who brought you the most famous TV series of 
+                        all time, Westeros Northern Ireland places you in the fantastical and thrilling 
+                        world of Game of Thrones. Built within minutes of many of the filming 
+                        locations used in the production of the TV series Westeros Northern Ireland 
+                        will feel familiar to all fans of the show.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the drogon roller coaster -->
+            <!-- Using the Taron roller coaster at Phantasialand Germany.-->
+            <div id="drogon">
+                <h2>Ride The Drogon&trade;</h2>
+                <img src="assets/coaster.jpeg" alt="Picture of roller coaster" id="drogon-img">              
+                <p>The Drogon&trade; is a roller coaster designed and engineered to minic the 
+                    experience of riding on the back of a dragon.</p>
             </div>
 
             <!-- latest main attraction -->
-            <div>
-                <h2>Latest Main Attraction</h2>
-                <p class="description">placeholder for description</p>
-                <img src="assets/Presse_Phantasialand_mystery_01_1920x1280.jpeg" width="70%" height="20%"
-                    alt="Theme park picture">
+            <div id="dining">
+                <div>
+                    <h2>All Men (& Everyone) Must Dine</h2>
+                    <p>Hungry? Then head to any of the three restaurants and dine on a menu 
+                    inspired by, and in some cases directly lift from, the show.</p>
+                </div>
+                <img src="assets/direwolf-pastry.jpeg" alt="Direwolf pastry picture" id="direwolf-pastry">
+                <img src="assets/dining-table.jpeg" alt="Dining Area picture" id="dining-table">
+                <img src="assets/pudding.jpeg" alt="Picture of pudding" id="pudding">
+                <img src="assets/serving.jpeg" alt="Serving of food" id="food-serving">
+                <img src="assets/menu.jpeg" alt="Picture of menu" id="dining-menu">
             </div>
 
             <!-- Shops -->
-            <div>
+            <div id="shop">
                 <h2>Shop, Plan and Play</h2>
-                <img src="assets/HBOMaxBanner.png" width="100%" height="20%" alt="HBO Max Banner">
+                <img src="assets/HBOMaxBanner.png" alt="HBO Max Banner" id="hbo-banner">
+                <div id="complete-collection">
+                    <img src="assets/books.jpeg" alt="Get the complete collection">
+                </div>
+                <div id="collectable">
+                    <img src="assets/collectable.png" alt="Exclusive collectables">
+                </div>
+                <div id="gifts">
+                    <img src="assets/gift.jpeg" alt="Personalized gifts">
+                </div>
             </div>
-            <p class="description">placeholder for shop 1 </p>
-            <p class="description">placeholder for shop 2 </p>
-            <p class="description">placeholder for shop 3 </p>
+            
         </main>
     </div>
 </body>
