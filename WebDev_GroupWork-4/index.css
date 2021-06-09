@@ -99,7 +99,7 @@ html, body{
       "attraction-description"
       "tickets-on-sale"
       "what-to-know"
-      "experiences"
+      "attractions"
       "drogon"
       "set-tour"
       "dining"
@@ -153,100 +153,72 @@ html, body{
     padding: 10px;
   }
 
+  .experiences{
+    display: grid;
+    grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
+    grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
+    grid-template-areas:
+        ". experience-heading experience-heading experience-heading ." 
+        ". experience-grid-1 experience-grid-1 experience-grid-2 ."
+        ". experience-grid-3 experience-grid-4 experience-grid-5 .";
+  }
+
+  .experience-heading{
+    grid-area: experience-heading;
+  }
+
+  .experience-grid-1{
+    grid-area: experience-grid-1;
+  }
+
+  .experience-grid-2{
+    grid-area: experience-grid-2;
+  }
+
+  .experience-grid-3{
+    grid-area: experience-grid-3;
+  }
+
+  .experience-grid-4{
+    grid-area: experience-grid-4;
+  }
+
+  .experience-grid-5{
+    grid-area: experience-grid-5;
+  }
+
   #what-to-know{
     grid-area: what-to-know;
-    display: grid;
+/*     display: grid;
     grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
     grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
     grid-template-areas:
         ". heading heading heading ." 
         ". feature feature smaller-feature ."
-        ". desc1 smaller-feature2 desc2 .";
+        ". desc1 smaller-feature2 desc2 ."; */
   }
 
   #what-to-know div{
       padding: 0 5%;
   }
 
-  #what-to-know img{
+.experiences img, .experiences video{
       width: 100%;
       height: 100%;
       object-fit: cover;
   }
 
-  #what-to-know h2{
-      grid-area: heading;
-  }
-
-  #wtkDesc1{
-    grid-area: desc1;
+#attractions{
+    grid-area: attractions;
 }
 
-#wtkDesc2{
-    grid-area: desc2;
-}
-
-#wtkImg2{
-    grid-area: feature;
-    object-position: 0 0;
-}
-
-#wtkImg3{
-    grid-area: smaller-feature;
-}
-
-#wtkImg1{
-    grid-area: smaller-feature2;
-}
-
-#experiences{
-    grid-area: experiences;
-    display: grid;
-    grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
-    grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
-    grid-template-areas:
-        ". heading heading heading ." 
-        ". wildfire wildfire axe-throw ."
-        ". purple-wed archery hedges-tunnel .";
-}
-
-#experiences h2{
-    grid-area: heading;
-}
-
-#experiences img{
-    width: 100%;
-      height: 100%;
-      object-fit: cover;
-}
-
-#wildfire-show{
-    grid-area: wildfire;
-}
-
-.experience{
+.attraction{
     display: grid;
 }
 
-.experience img, .experience div{
+.attraction img, .attraction video, .attraction div{
     grid-column: 1;
     grid-row: 1;
-}
-
-#axe-throw{
-    grid-area: axe-throw;
-}
-
-#purple-wedding{
-    grid-area: purple-wed;
-}
-
-#archery-winterfell{
-    grid-area: archery;
-}
-
-#dark-hedges{
-    grid-area: hedges-tunnel;
 }
 
 #drogon{
@@ -276,84 +248,10 @@ html, body{
 
 #set-tour{
   grid-area: set-tour;
-  display: grid;
-    grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
-    grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
-    grid-template-areas:
-        ". heading heading heading ." 
-        ". map-room map-room props-sword ."
-        ". costume-daenerys costume-tywin desc .";
-}
-
-#set-tour img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#set-tour h2{
-  grid-area: heading;
-}
-
-#set-tour p{
-  grid-area: desc;
-}
-
-#set-map-room{
-  grid-area: map-room;
-}
-
-#costume-tywin{
-  grid-area: costume-tywin;
-}
-
-#costume-daenerys{
-  grid-area: costume-daenerys;
-}
-
-#props-sword{
-  grid-area: props-sword;
 }
 
 #dining{
     grid-area: dining;
-    display: grid;
-    grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
-    grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
-    grid-template-areas:
-        ". heading heading heading ." 
-        ". direwolf-pastry direwolf-pastry dining-table ."
-        ". pudding food-serving dining-menu .";
-}
-
-#dining div{
-    grid-area: heading;
-}
-
-#dining img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#direwolf-pastry{
-    grid-area: direwolf-pastry;
-}
-
-#dining-table{
-    grid-area: dining-table;
-}
-
-#pudding{
-    grid-area: pudding;
-}
-
-#food-serving{
-    grid-area: food-serving;
-}
-
-#dining-menu{
-    grid-area: dining-menu;
 }
 
 #shop{
