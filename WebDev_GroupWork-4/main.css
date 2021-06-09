@@ -3,6 +3,15 @@
   src: url("assets/Roboto-Regular.ttf")
 }
 
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("assets/GameOfThrones.ttf")
+}
+
+.logo svg{
+  font-family: "Game of Thrones";
+}
+
 body{
   font-family: 'Roboto', sans-serif;
 }
