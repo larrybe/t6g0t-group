@@ -145,7 +145,8 @@ html, body{
     margin-bottom: 5px;
   }
   
-  .tickets-on-sale button{
+  .tickets-on-sale a{
+    display: inline-block;
     background-color: #47A1F5;
     color: #fff;
     border: none;
@@ -189,17 +190,23 @@ html, body{
 
   #what-to-know{
     grid-area: what-to-know;
-/*     display: grid;
-    grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
-    grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
-    grid-template-areas:
-        ". heading heading heading ." 
-        ". feature feature smaller-feature ."
-        ". desc1 smaller-feature2 desc2 ."; */
   }
 
-  #what-to-know div{
-      padding: 0 5%;
+  #wtkDetail1{
+  }
+
+  #wtkDetail2{
+    background-color: #47A1F5;
+    color: #fff;
+  }
+
+  #wtkDetail2 a{
+    color: #fff;
+  }
+
+  .experience-detail{
+    margin: 0;
+    padding: 0 5%;
   }
 
 .experiences img, .experiences video{
@@ -212,6 +219,21 @@ html, body{
     grid-area: attractions;
 }
 
+#attractions p, #attractions h3{
+  color: #fff;
+  text-shadow: 4px 4px 5px #000;
+  margin: 0;
+}
+
+#attractions h3{
+  padding: 1.3vw;
+  padding-bottom: 0;
+}
+
+#attractions p{
+  padding: 0 1.3vw;
+}
+
 .attraction{
     display: grid;
 }
@@ -219,6 +241,14 @@ html, body{
 .attraction img, .attraction video, .attraction div{
     grid-column: 1;
     grid-row: 1;
+}
+
+#wildfire-show-desc{
+  position: relative;
+}
+
+#axe-throw-img{
+  object-position: 15%;
 }
 
 #drogon{
@@ -237,6 +267,9 @@ html, body{
 
 #drogon p{
     grid-area: desc;
+    padding: 5%;
+    background-color: #0f0f0f;
+    color: #fff;
 }
 
 #drogon img{
@@ -248,6 +281,12 @@ html, body{
 
 #set-tour{
   grid-area: set-tour;
+}
+
+#set-tour p{
+  padding: 5%;
+  background-color: #3E3740;
+  color: #F2F2F2;
 }
 
 #dining{
@@ -262,7 +301,25 @@ html, body{
     grid-template-areas:
         ". heading heading heading ." 
         ". hbo-banner hbo-banner hbo-banner ."
-        ". complete-collection collectable gifts .";
+        ". complete-collection collectable gifts ."
+}
+
+#shop div{
+  display: grid;
+  box-sizing: border-box;
+}
+
+#shop div img, #shop div p{
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+#shop div p{
+  color: #fff;
+  text-shadow: 4px 4px 5px #000;
+  margin: 0;
+  padding: 5%;
 }
 
 #shop h2{
@@ -281,6 +338,10 @@ html, body{
 
 #complete-collection{
     grid-area: complete-collection;
+}
+
+#complete-collection img{
+  object-position: 85%;
 }
 
 #collectable{

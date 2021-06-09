@@ -50,14 +50,14 @@
             <!-- promotional offer with a purchase box link -->
             <div class="tickets-on-sale">
                 <h2>Tickets on Sale now</h2>
-                <a href="parks_tickets.html"> <button>Purchase Tickets</button> </a>
+                <a href="parks_tickets.html"> Purchase Tickets</a>
                 <p class="description">placeholder for detailed offers</p>
             </div>
 
             <!-- more information on the theme park before you travel -->
             <div id="what-to-know" class="experiences">
                 <h2 class="experience-heading">What to know before you go.</h2>
-                <div class="description experience-grid-3" id="wtkDesc1">
+                <div class="experience-detail experience-grid-3" id="wtkDetail1">
                     <h3>The most immersive Game of Thrones experience yet.</h3>
                     <p>Planned and built by the people who brought you the most famous TV series of 
                         all time, Westeros Northern Ireland places you in the fantastical and thrilling 
@@ -65,7 +65,7 @@
                         locations used in the production of the TV series Westeros Northern Ireland 
                         will feel familiar to all fans of the show.</p>
                 </div>
-                <div class="description experience-grid-5" id="wtkDesc2">
+                <div class="experience-detail experience-grid-5" id="wtkDetail2">
                     <h3>Make your reservation</h3>
                     <!--Adapted from the Disney World website-->
                     <p>Both a valid ticket and a park reservation is required to enter the theme park.
@@ -83,15 +83,19 @@
             <div id="attractions" class="experiences">
                 <h2 class="experience-heading">Experiences and Attractions</h2>
                 <div class="attraction experience-grid-1" id="wildfire-show">
+                    <!-- <video loop autoplay muted>
+                        <source src="assets/wildfireworks.mp4" type="video/mp4">
+                        <img src="assets/wildfire.jpeg" alt="wildfire explosion" id="wildfire-img">
+                    </video> -->
                     <img src="assets/wildfire.jpeg" alt="wildfire explosion" id="wildfire-img">
-                    <div>
+                    <div id="wildfire-show-desc">
                     <h3>The WildFireWorks Show</h3>
                     <p>Every Saturday night. Experience being at the Battle of the Blackwater with the
                         most spectacular and innovative fireworks show on earth.</p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-2" id="axe-throw">
-                    <img src="assets/axe01.jpeg" alt="Tyrion's Axe Throw" id="purple-wedding-img">
+                    <img src="assets/axe01.jpeg" alt="Tyrion's Axe Throw" id="axe-throw-img">
                     <div>
                     <h3>Tyrion's Axe Throw</h3>
                     <p>Learn to weild the weapon of choice for Tyrion Lannister.</p>
@@ -115,11 +119,7 @@
                     <img src="assets/hedges.jpeg" alt="dark hedges" id="dark-hedges-img">
                     <div>
                     <h3>Dark Hedges Tunnel</h3>
-                    <p>Planned and built by the people who brought you the most famous TV series of 
-                        all time, Westeros Northern Ireland places you in the fantastical and thrilling 
-                        world of Game of Thrones. Built within minutes of many of the filming 
-                        locations used in the production of the TV series Westeros Northern Ireland 
-                        will feel familiar to all fans of the show.</p>
+                    <p>Walk from the Red Keep to Winterfell through this scenic tunnel.</p>
                     </div>
                 </div>
             </div>
@@ -129,14 +129,14 @@
             <div id="drogon">
                 <h2>Ride The Drogon&trade;</h2>
                 <img src="assets/coaster.jpeg" alt="Picture of roller coaster" id="drogon-img">              
-                <p>The Drogon&trade; is a roller coaster designed and engineered to minic the 
+                <p class="experience-detail">The Drogon&trade; is a roller coaster designed and engineered to minic the 
                     experience of riding on the back of a dragon.</p>
             </div>
 
             <!-- Authentic et Tour -->
             <div id="set-tour" class="experiences">
                 <h2 class="experience-heading">Authentic Set Tour</h2>
-                <p class="experience-grid-5">The sets used in the filming of the TV show have been 
+                <p class="experience-grid-5 experience-detail">The sets used in the filming of the TV show have been 
                     rebuilt at Westeros Northern Ireland. Walk through the same sets used by
                     the actors and production crew of Game of Thrones. The same props and
                     customes used by the actors are also here.
@@ -167,13 +167,16 @@
                 <h2>Shop, Plan and Play</h2>
                 <img src="assets/HBOMaxBanner.png" alt="HBO Max Banner" id="hbo-banner">
                 <div id="complete-collection">
-                    <img src="assets/books.jpeg" alt="Get the complete collection">
+                    <img src="assets/limited-edition.jpeg" alt="Get the complete collection">
+                    <p>Get the lmited edition collection</p>
                 </div>
                 <div id="collectable">
                     <img src="assets/collectable.png" alt="Exclusive collectables">
+                    <p>Exclusive items only in the shop</p>
                 </div>
                 <div id="gifts">
                     <img src="assets/gift.jpeg" alt="Personalized gifts">
+                    <p>Personalized gifts</p>
                 </div>
             </div>
             
