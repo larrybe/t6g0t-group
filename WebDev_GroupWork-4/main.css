@@ -12,6 +12,11 @@
   font-family: "Game of Thrones";
 }
 
+.logo svg text{
+  fill: #000;
+  stroke: none;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
 }
