@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/Roboto-Regular.ttf")
+}
+
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("assets/GameOfThrones.ttf")
+}
+
+.logo svg{
+  font-family: "Game of Thrones";
+}
+
+.logo svg text{
+  fill: #000;
+  stroke: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 h1
 {
   	background: black;

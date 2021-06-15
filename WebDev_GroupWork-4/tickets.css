@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'Game of Thrones';
+  src: url('assets/GameOfThrones.ttf');
+}
+
+.svg-logo text{
+  font-family: 'Game of Thrones';
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "call-to-action-1"
+    "tickets-hero"
+    "call-to-action-2"
+    "booking-promos"
+    "booking-area"
+    "booking-disclaimer"
+    "booking-help";
+}
+
+header{
+  box-sizing: border-box;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "covidInfo"
+    "navBar";
+  box-shadow: -5px 2px 5px #d1d1d1;
+}
+
+header > *{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-areas: 
+    "covidInfo"
+    "navBar"; */
+  /* grid-template-columns: 10% auto auto 10%;
+  grid-template-areas: 
+    ". covidP covidP ."
+    ". logo navlinks ."; */
+}
+
+#covid-info{
+  background-color: #47A1F5;
+  color: #fff;
+  grid-area: covidInfo;
+  justify-items: center;
+}
+
+#covid-info p{
+  margin: 0;
+  padding: 5px 0;
+  width: 80%;
+  font-size: 18px;
+}
+
+#covid-info p a{
+  color: #fff;
+}
+
+nav{
+  grid-area: navBar;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  width: 80%;
+  padding: 4px 0;
+}
+
+.logo{
+  /* grid-area: logo;
+  justify-items: center; */
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.logo img{
+  width: 12em;
+}
+
+
+nav ul{
+  justify-self: end;
+  list-style-type: none;
+  grid-row: 1;
+  grid-column: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0 24px;
+}
+
+#call-to-action-1{
+  grid-area: call-to-action-1;
+  background: linear-gradient(270deg, #B347F5 40.97%, rgba(179, 71, 245, 0) 90.24%);
+  text-align: center;
+  color: #fff;
+  
+}
+
+#call-to-action-1 p{
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+}
+
+#tickets-hero{
+  grid-area: tickets-hero;
+  text-align: center;
+  display: grid;
+}
+
+#tickets-hero img{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#tickets-hero p{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 6%;
+  font-size: 56px;
+}
+
+#tickets-hero p{
+  font-family: "trajan-color",serif;
+font-weight: 400;
+font-style: normal;
+}
+
+#call-to-action-2{
+  grid-area: call-to-action-2;
+  text-align: center;
+  background-color: #B347F5;
+  color: #fff;
+}
+
+#call-to-action-2 p{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+}
+
+#booking-promos{
+  grid-area: booking-promos;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr 10%;
+  grid-template-areas: 
+    ". promo-one promo-two promo-three .";
+}
+
+#booking-promos > div{
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+#booking-promos img{
+  width: 98%;
+}
+
+#booking-promos h4, #booking-promos p{
+  margin: 0;
+}
+
+#promo-one{
+  grid-area: promo-one;
+  padding-right: 2%;
+}
+
+#promo-two{
+  grid-area: promo-two;
+  box-sizing: content-box;
+  border-color: #d1d1d1;
+  border-width: 1px;
+  border-style: none solid none solid;
+  padding: 0 2%;
+}
+
+#promo-three{
+  grid-area: promo-three;
+  padding-left: 2%;
+}
+
+#booking-area{
+  grid-area: booking-area;
+  display: grid;
+  grid-template-columns: 10% 50% 30% 10%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    ". tickets tickets ."
+    ". form summary ."
+    ". submit . .";
+}
+
+#booking-area h3{
+  text-align: center;
+  grid-area: tickets;
+}
+
+#booking-form-div{
+  grid-area: form;
+}
+
+#booking-summary{
+  grid-area: summary;
+}
+
+#booking-submit{
+  grid-area: submit;
+}
+
+#booking-disclaimer{
+  grid-area: booking-disclaimer;
+  display: grid;
+  justify-items: center;
+  margin: 20px 0;
+  padding: 10px 0;
+  padding: 2% 0;
+}
+
+#booking-disclaimer h3{
+  padding-top: 2%;
+  border-top: 1px solid #d1d1d1;
+}
+
+#booking-disclaimer > *{
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#booking-help{
+  grid-area: booking-help;
+  display: grid;
+  justify-items: center;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+#booking-help h3{
+  padding-top: 2%;
+  border-top: 1px solid #d1d1d1;
+}
+
+#booking-help > *{
+  width: 80%;
+  margin: 0;
+
+  text-align: center;
+}
+
+h1
+{
+  	background: black;
+  	color: white;
+  	font-size: 50px;
+}
+
+.topnav
+{
+	 font-size: 30px;
+}
+
+.heros
+{
+   font-size: 30px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
