@@ -13,19 +13,12 @@
 }
 
 .logo svg text{
-  fill: #000;
+  fill: #705f42;
   stroke: none;
 }
 
 body{
   font-family: 'Roboto', sans-serif;
-}
-
-h1
-{
-  	background: black;
-  	color: white;
-  	font-size: 50px;
 }
 
 .topnav
@@ -64,3 +57,10 @@ h1
   background-color: #f1f1f1;
 }
 
+footer{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #705f42;
+  color: #fff;
+}

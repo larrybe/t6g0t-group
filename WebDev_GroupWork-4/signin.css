@@ -15,7 +15,7 @@ body{
     background-size: cover;
 }
 .tabcontent {
-    <!--display: none;-->
+    /* display: none; */
     border: 1px solid;
     border-top: none;
     background-color: RGB(225,225,225);
@@ -116,8 +116,8 @@ body{
     h3 {
       font-family: trajan-pro-3, serif;
     }
-    /*chat box css*/
-    {box-sizing: border-box;}
+    /*chat box css
+    {box-sizing: border-box;}*/
     
     .open-button {
       background-color: RGB(134,8,9);
@@ -146,7 +146,7 @@ body{
       background-color: RGB(225, 225, 225);
       }
       .form-container textarea {
-      <!--display: none;-->
+      /* display: none; */
       width: 100%;
       padding: 0px;
       margin: 5px 0 22px 0;
@@ -179,5 +179,14 @@ body{
     }
     .darkest {
       background-color:RGB(59, 59, 59);
+    }
+
+    .logo svg{
+      font-family: "Game of Thrones";
+    }
+    
+    .logo svg text{
+      fill: #705f42;
+      stroke: none;
     }
     

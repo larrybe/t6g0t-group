@@ -37,7 +37,8 @@ header{
   grid-template-areas: 
     "covidInfo"
     "navBar";
-  box-shadow: -5px 2px 5px #d1d1d1;
+    box-shadow: -1px 2px 10px #705f42;
+    z-index: 0;
 }
 
 header > *{
@@ -107,6 +108,17 @@ nav ul li{
   padding: 0 24px;
 }
 
+nav ul li a{
+  text-decoration: none;
+  color: #705f42;
+  transition: color 1s;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+  color: #000;
+}
+
 #call-to-action-1{
   grid-area: call-to-action-1;
   background: linear-gradient(270deg, #B347F5 40.97%, rgba(179, 71, 245, 0) 90.24%);
@@ -134,18 +146,15 @@ nav ul li{
   grid-row: 1;
 }
 
-#tickets-hero p{
+#tickets-hero h1{
   width: 100%;
   grid-column: 1;
   grid-row: 1;
   padding-top: 6%;
-  font-size: 56px;
-}
-
-#tickets-hero p{
+  font-size: 48px;
   font-family: "trajan-color",serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #call-to-action-2{
@@ -231,6 +240,14 @@ font-style: normal;
   grid-area: submit;
 }
 
+#booking-submit input{
+  background: #705f42;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
 #booking-disclaimer{
   grid-area: booking-disclaimer;
   display: grid;
@@ -270,13 +287,6 @@ font-style: normal;
   margin: 0;
 
   text-align: center;
-}
-
-h1
-{
-  	background: black;
-  	color: white;
-  	font-size: 50px;
 }
 
 .topnav
