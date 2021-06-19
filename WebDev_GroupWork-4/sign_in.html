@@ -1,0 +1,255 @@
+<!--We chose a sign-in page because it so crucial to a modern theme park. It is where the potential visitor buys in to the theme park and engages very actively. This is an action/commitment page rather than a inforamation page
+I've commented this code for someone of my level of knowledge, a learner who wants as simple information about the structure and what it means as possible. I also wanted to make it very easy to find the different sections.-->
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="signin.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xkh1xdx.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xkh1xdx.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xkh1xdx.css">
+
+ 
+    <title>Sign in | Sign up</title>
+   
+            
+              
+              <!--<script>
+                function openSign(evt, signName) {
+                
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(signName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                
+                </script>   -->
+                 
+
+            
+</head>
+
+<body>
+<!--header just for logo-->
+  <header>
+    <img src="assets/logo.png" alt="logo spelling Westeros Northern Ireland in black Celtic-type font" width=200 height=50><!--extended alt description for accessibility -->
+  </header><!-- There is no nav bar in order to streamline the page and focus the user's attention on staying on the page to sign in or sign up-->
+<!-- end of header section-->
+
+<!-- start of main section-->
+  <main><!--page is divided into main section and bottom nav section-->
+<!-- title of main section-->     
+    <h1>Wecome to Westeros</h1>
+
+ 
+<!--tab container for sign in and start up tabs starts here-->
+    <div id="tabArea">
+      <div class="tab">
+          <button class="tablinks" onclick="openSign(event, 'SignIn')" id="defaultOpen">Sign In</button>
+          <button class="tablinks" onclick="openSign(event, 'SignUp')">Sign Up</button>
+      </div>
+<!-- Content of Sign in tab starts here -->
+      <div id="SignIn" class="tab">
+<!-- Title of Sign in section-->
+        <h3>Sign in to your Westeros account</h3>
+<!-- Sign-in form starts here-->
+        <form action="http://www.westeros.com/login/"  method="post"><!--action link for sign-in form-->
+<!-- Container ("field set") of sign in form starts here -->
+        <fieldset>   <!-- We used a fieldset to structure a form with multiple fields.This will be enhanced using CSS, but the page layout will be very simple so as not to distract users from signingin-->            
+<!-- Start of drop down info box for sign in form-->
+          <details>
+<!-- Info box title -->
+            <summary>Info</summary><!-- Renders as "Info" with a collapsed "triangle" indicating where user should click to open info box".-->
+<!-- Info box contents -->
+            <p>You may use your login details for either your Westeros account or your HBO streaming account</p><!-- This is the content of the drop-down box-->
+          </details> <br>
+<!-- End of drop down info box -->
+<!-- Start of sign-in form fields -->
+<!-- Email address input box -->
+            
+          <input  class="this" placeholder="Enter Email Address" type="email" id="email" name="email" required="required"><br><!-- "required" creates an error message if no input entered in this field when user hits "submit" in each of the following fields, where shown . The field will also be highlighted in red, but this is added later with CSS ("invalid/valid")-->
+<!-- Password input box -->     
+          <input  class="this" placeholder="Enter Password" type="password" id="pwd" name="pwd" required="required"><br><br>
+<!-- Remember me check box -->
+          <input  class="this" type="checkbox" name="keepMe" value="yes" />Keep me logged in<br><br><!--places a cookie on the user's browser to record user input on the form. JS for action call up new page to be added-->
+<!-- Clear button for sign-in form -->
+          <input  class="other" type="reset" value="Clear">
+<!-- Submit button for sign-in form -->
+          <input class= "gold" type="submit" name="submit_button" value="Sign in"><br><br>
+                        
+        </fieldset>
+<!-- Container for fields of sign-in form ends here -->
+          </form>
+<!-- Sign-in form ends here -->
+      </div>
+<!-- Sign-in tab ends here -->  
+<!-- Sign-up tab starts here -->
+    <div id="SignUp" class="tabcontent"><!-- Sign-up content consists of form (for user to input sign up info) and aside (with chatbox and sign up video link) -->
+
+<!-- Title of create your account -->
+      <h3>Create your Westeros account</h3> 
+<!-- Start of sign up form --> 
+    <form action="action_page.php"> <!-- Sign up form consists of 1) create account area and 2) billing address area -->
+    <fieldset>
+<!-- Start of create your account section of sign-up area -->   
+      <div id="CreateAccount" class="mid">
+
+            
+<!-- Start of optional prefix selector -->
+            
+            <select>
+            <option disabled hidden selected>Prefix (optional)</option>
+              <option value="mr">Mr</option>
+              <option  value="mrs">Mrs</option>
+              <option  value="miss">Miss</option>
+              <option  value="ms">Ms</option>
+              <option  value="dr">Dr</option>
+              </select><br>
+          
+<!-- End of option prefix selector -->
+<!-- First name input field for sign up form -->
+          
+            <input class="this" type="text" placeholder="First Name" name="firstname" required><br>
+<!-- Optional middle name input field for sign up form -->         
+            <input class="this" type="text" placeholder="Middle Name (optional)" name="middlename"><br>
+<!-- Last name input field for sign up form -->          
+            <input class="this" type="text" placeholder="Last Name" name="lastname" required><br>
+<!-- Email input field for sign up form -->          
+            <input class="this" type="email" placeholder="Email" name="email" required><br>
+<!-- Password input field for sign up form -->         
+            <input class="this" type="password" placeholder="Enter Password" name="psw" required><br>
+<!-- Password repeat input field for sign up form -->         
+            <input class="this" type="password" placeholder="Repeat Password" name="psw-repeat" required><br><!-- Requests that user repeat password so as to confirm password has been input correctly -->
+<!-- Birth date input field for sign up form -->         
+            <input class="this" type="text" id="birthDate" name="birthdate"
+              placeholder="Birth date: dd/mm/yy"><br>
+            
+<!-- Remmber me check box for sign up form -->
+            <label>
+                <input  type="checkbox"  name="remember" style="margin-bottom:15px"> Remember me<!-- Puts cookie on user's browser so any user input con form an be stored -->
+            </label>
+          
+          </div><!-- Create account area ends -->
+
+          
+<!-- Start of Billing address area of sign up area-->
+          <div id="billingaddress">
+<!-- title of billing address area-->
+            <h3>Billing Address</h3>
+<!-- Start of region selector of billing address area-->
+            <select>
+<!-- Select Country/Region placeholder for region selector-->
+              <option disabled hidden selected>Select Country/Region</option> <!-- "Select Country/Region" is kept visible as a placeholder in this field until the user makes a selection-->
+<!-- Country/Regions to be selected start here-->
+              <option value="here">Here</option>
+              <option value="there">There</option>
+              <option value="everywhere">Everywhere</option>
+              </select><br>
+<!-- End of region selector of billing address area-->
+<!-- Address field of billing address area-->
+              <input class="this" type="text" placeholder="Address" name="address" required><br>
+<!-- Optional line 2 of address field of billing address area-->            
+              <input class="this" type="text" placeholder="Line 2 (optional)" name="line2"><br>
+<!-- Town/city field of billing address area-->             
+              <input class="this" type="text" placeholder="Town/City" name="town/city" required><br>
+<!-- Post code field of billing address area-->         
+              <input class="this" type="text" placeholder="Postcode" name="postcode" required><br>
+<!-- Start of County selector of billing address area-->
+              <select>
+                  <option disabled hidden selected>Select County</option>
+                  <option value="northshire">Northshire</option>
+                  <option value="southshire">Southshire</option>
+                  <option value="eastshire">Eastshire</option>
+                  <option value="westshire">Westshire</option>
+              </select><br><br>
+            
+          <!-- County selector of billing address area ends-->
+          </div><!-- Billing address area ends-->
+<!-- legal notes of sign-up form starts-->
+          <div id="legal">
+<!-- Send me updates check box-->
+            <input type="checkbox"  name="remember" style="margin-bottom:15px"> Yes, I would like to receive updates and special offers from Westeros Northern Ireland<br>
+<!-- Link to terms and conditions -->        
+          <span>By creating an account you agree to our </span><a class="gold" href="#">Terms & Privacy Policy</a>.<br><br>
+          </div>
+<!-- legal section ends-->
+<!-- Clear button for entire sign up (create account and billing address) form starts-->   
+          <div class="clearfix">
+            <input class="other" type="reset" value="Clear">
+<!-- Submit button for entire sign up (create account and billing address) form-->               
+            <button type="submit" class="signupbtn gold">Sign Up</button><br><br>
+          </div>
+<!-- Clear & submit entire sign up form ends-->
+       
+      </fieldset>
+
+      </form>
+<!-- sign up form ends-->
+     <aside>
+<!--Start of chatbox for sign-up form-->
+      
+<!-- Sign-up form ends here -->
+<!-- Link to sign-up video -->
+              <div>
+                  <a href="https://www.facebook.com/pg/Westeros/videos/sign_up_Westeros">Westeros on Facebook page: Watch our simple video: <span class="gold">How to sign up with Westeros</span></a>       
+              </div>
+<!-- Link to sign-up video ends here -->
+      </aside>
+<!-- Aside to sign-up tabends here-->
+
+    </div>
+    <!--end of sign-up form section-->
+   </div>
+    
+   <!--start of mini nav bar section-->
+  </main>
+  <!--chatbox based on W3schools.com example "How to Create a Popup Chat"-->
+  <button class="open-button" onclick="openForm()">Chat</button>
+  <div class="chat-box" id="messageForm">
+      <form action="/action_page.php" class="form-container">
+<!-- Title of chatbox-->           
+            <h3 class="this">Chat</h3>
+            <label for="message"><b>Message</b></label><br>
+              <textarea placeholder="Type your message here...Hours Available from 8.30AM to 8.30PM GMT." name="message" required></textarea><!--text area will be enlarged so whole placeholder is visible using css. input of a message by the user is "required" which means that if they do not do so and then hit submit an error message is triggered-->
+                       
+            
+<!-- cancel button for chat box--> 
+              <button type="button" class="btn cancel other" onclick="closeForm()">Close</button>
+<!-- submit button for chat box-->  
+              <button type="submit" class="button gold">Send</button><!-- chat box closes when user clciks on chat button -->
+      </form>
+  </div>
+  <!--<script>
+    function openForm() {
+      document.getElementById("messageForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("mesageForm").style.display = "none";
+    }
+    </script> -->
+  
+    <!--end of mini nav bar section-->
+    <footer>
+      <nav>       
+        <a class="lightest darkest" href="index.html"><span style="background-color:RGB(59, 59, 59)">Home</span></a>
+        <a class="lightest" href="contact.html">Contact</a><!--we need balance between convenience for user but also simplicity/streamlining of log-in page. Some theme park websites (e.g. Disney) have no nav links on sign-in page at all but we think this may frustrate the user.  We put the link at the end of the page as it is a "last resort" for the user.-->
+        
+    </nav>
+  </footer>
+    
+</body>
+
+
+</html>
