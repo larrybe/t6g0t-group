@@ -15,6 +15,7 @@
 .logo svg text{
   fill: #705f42;
   stroke: none;
+  cursor: default;
 }
 
 body{

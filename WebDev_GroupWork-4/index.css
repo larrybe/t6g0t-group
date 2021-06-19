@@ -143,12 +143,17 @@ html, body{
   
   .main-hero h1{
     margin: 10% 0;
-    font-size: 36px;
+    font-size: 46px;
+    font-family: "trajan-color",serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #705f42;
   }
   
   .main-hero p{
     margin: 13% 0;
-    font-size: 28px;
+    font-size: 34px;
+    color: #705f42;
   }
   
   .tickets-on-sale{
