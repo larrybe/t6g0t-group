@@ -37,8 +37,9 @@ header{
   grid-template-areas: 
     "covidInfo"
     "navBar";
-    box-shadow: -1px 2px 10px #705f42;
+    box-shadow: -1px 2px 10px #B38C4A;
     z-index: 0;
+  background: linear-gradient(270deg, rgb(225, 225, 225) 60%, #fff 100%);
 }
 
 header > *{
@@ -110,7 +111,7 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color: #705f42;
+  color: #323232;
   transition: color 1s;
 }
 
@@ -121,7 +122,8 @@ nav ul li a:hover{
 
 #call-to-action-1{
   grid-area: call-to-action-1;
-  background: linear-gradient(270deg, #323232 60%, #b38c4a00 100%);
+  /* background: linear-gradient(270deg, #323232 60%, #b38c4a00 100%); */
+  background-color: #323232;
   text-align: center;
   color: #B38C4A;
   
