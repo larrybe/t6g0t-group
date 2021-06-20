@@ -37,6 +37,7 @@ html, body{
   }
   
   main{
+    background-color: rgb(225, 225, 225);
     grid-area: main;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -76,7 +77,7 @@ html, body{
   .main-hero h1{
     margin: 10% 0;
     font-size: 46px;
-    font-family: "trajan-color",serif;
+    font-family: "trajan-color", "Trajan-pro", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--gold-colour);
@@ -275,7 +276,7 @@ html, body{
 
 #shop div p{
   color: #fff;
-  text-shadow: 4px 4px 5px #000;
+  text-shadow: 0 0 5px #000;
   margin: 0;
   padding: 5%;
 }

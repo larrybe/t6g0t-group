@@ -1,5 +1,6 @@
 
 .container{
+  background-color: rgb(225, 225, 225);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 
@@ -47,9 +48,11 @@
   grid-row: 1;
   padding-top: 6%;
   font-size: 48px;
-  font-family: "trajan-color",serif;
+  font-family: "trajan-color", "Trajan-pro" ,serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--gold-colour);
+  text-shadow: 0 0 2px var(--dark-gold-colour);
 }
 
 #call-to-action-2{

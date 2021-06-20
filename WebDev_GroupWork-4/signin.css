@@ -193,8 +193,8 @@ body{
     }
     
     .logo svg text{
-      fill: #2a2a57; /* Colour of the logo */
-      stroke: RGB(59, 59, 59); /* Outline of the logo. Set to "none" to remove the outline. */
+      fill: rgb(42, 42, 87); /* Colour of the logo */
+      stroke: rgb(59, 59, 59); /* Outline of the logo. Set to "none" to remove the outline. */
       stroke-width: 0.5px; /* Thickness of the outline */
       cursor: default;
     }

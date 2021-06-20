@@ -15,6 +15,11 @@
   font-family: "Game of Thrones";
   src: url("assets/GameOfThrones.ttf")
 }
+
+@font-face {
+  font-family: "Trajan-pro";
+  src: url("assets/TrajanProRegular.ttf");
+}
 /* -------------------- */
 
 /* CSS settings shared between index.html and parks_tickets.html */
@@ -27,6 +32,13 @@ html, body{
 
 body{
   font-family: 'Roboto', sans-serif;
+}
+
+.container h1, .container h2, .container h3, 
+.container h4, .container h5, .container h6,
+main h1, main h2, main h3, 
+main h4, main h5, main h6{
+  font-family: 'Trajan-pro';
 }
 
 /* ----------------------- */
