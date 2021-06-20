@@ -181,12 +181,20 @@ body{
       background-color:RGB(59, 59, 59);
     }
 
+    @font-face {
+      font-family: "Game of Thrones";
+      src: url("assets/GameOfThrones.ttf")
+    }
+
     .logo svg{
       font-family: "Game of Thrones";
+      transform:scale(130%); /* Make the logo bigger. 130% is 30% bigger. */
     }
     
     .logo svg text{
-      fill: #705f42;
-      stroke: none;
+      fill: #2a2a57; /* Colour of the logo */
+      stroke: RGB(59, 59, 59); /* Outline of the logo. Set to "none" to remove the outline. */
+      stroke-width: 0.5px; /* Thickness of the outline */
+      cursor: default;
     }
     

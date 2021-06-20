@@ -13,49 +13,6 @@ html, body{
       "main";
   }
   
-  header{
-    box-sizing: border-box;
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-      "covidInfo"
-      "navBar";
-    box-shadow: -1px 2px 10px #705f42;
-    z-index: 0;
-  }
-  
-  header > *{
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-areas: 
-      "covidInfo"
-      "navBar"; */
-    /* grid-template-columns: 10% auto auto 10%;
-    grid-template-areas: 
-      ". covidP covidP ."
-      ". logo navlinks ."; */
-  }
-  
-  #covid-info{
-    background-color: #47A1F5;
-    color: #fff;
-    grid-area: covidInfo;
-    justify-items: center;
-  }
-  
-  #covid-info p{
-    margin: 0;
-    padding: 5px 0;
-    width: 80%;
-    font-size: 18px;
-  }
-  
-  #covid-info p a{
-    color: #fff;
-  }
-  
   nav{
     grid-area: navBar;
     display: grid;
@@ -66,16 +23,7 @@ html, body{
     padding: 4px 0;
   }
   
-  .logo{
-    /* grid-area: logo;
-    justify-items: center; */
-    grid-row: 1;
-    grid-column: 1;
-  }
   
-  .logo img{
-    width: 12em;
-  }
   
   
   nav ul{
@@ -86,22 +34,6 @@ html, body{
     margin: 0;
     padding: 0;
     font-size: 24px;
-  }
-  
-  nav ul li{
-    display: inline-block;
-    padding: 0 24px;
-  }
-
-  nav ul li a{
-    text-decoration: none;
-    color: #705f42;
-    transition: color 1s;
-  }
-  
-  nav ul li a:hover{
-    text-decoration: underline;
-    color: #000;
   }
   
   main{
@@ -147,13 +79,14 @@ html, body{
     font-family: "trajan-color",serif;
     font-weight: 400;
     font-style: normal;
-    color: #705f42;
+    color: var(--gold-colour);
+    text-shadow: 0 0 2px var(--dark-gold-colour);
   }
   
   .main-hero p{
     margin: 13% 0;
     font-size: 34px;
-    color: #705f42;
+    color: var(--gold-colour);
   }
   
   .tickets-on-sale{
@@ -168,9 +101,9 @@ html, body{
   .tickets-on-sale a{
     display: inline-block;
     box-sizing: border-box;
-    border: 2px solid #705f42;
+    border: 2px solid var(--dark-gold-colour);
     border-radius: 5px;
-    background-color: #705f42;
+    background-color: var(--gold-colour);
     color: #fff;
     padding: 10px;
     text-decoration: none;
@@ -179,7 +112,7 @@ html, body{
 
   .tickets-on-sale a:hover{
     background-color: #fff;
-    color: #705f42;
+    color: var(--dark-gold-colour);
   }
 
   .experiences{
@@ -221,7 +154,7 @@ html, body{
   }
 
   #wtkDetail2{
-    background-color: #705f42;
+    background-color: var(--dark-gold-colour);
     color: #fff;
   }
 
@@ -246,7 +179,7 @@ html, body{
 
 #attractions p, #attractions h3{
   color: #fff;
-  text-shadow: 4px 4px 5px #000;
+  text-shadow: 0 0 5px #000;
   margin: 0;
 }
 
