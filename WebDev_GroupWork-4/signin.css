@@ -181,6 +181,7 @@ body{
       background-color:RGB(59, 59, 59);
     }
 
+    /* The Logo */
     @font-face {
       font-family: "Game of Thrones";
       src: url("assets/GameOfThrones.ttf")
