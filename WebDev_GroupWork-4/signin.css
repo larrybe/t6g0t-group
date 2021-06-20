@@ -188,7 +188,7 @@ body{
 
     .logo svg{
       font-family: "Game of Thrones";
-      transform:scale(130%); /* Make the logo bigger. 130% is 30% bigger. */
+      transform:scale(130%); /* Change the size of the logo. 130% is 30% bigger. */
     }
     
     .logo svg text{
