@@ -37,7 +37,6 @@ html, body{
   }
   
   main{
-    background-color: rgb(225, 225, 225);
     grid-area: main;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -48,7 +47,8 @@ html, body{
       "drogon"
       "set-tour"
       "dining"
-      "shop";
+      "shop"
+      "contact";
   }
 
   main > div{
@@ -313,4 +313,42 @@ html, body{
 
 #gifts{
     grid-area: gifts;
+}
+
+#contact{
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    ". contact-heading contact-heading contact-heading ."
+    ". contact-tickets contact-support contact-location .";
+}
+
+#contact h2{
+  grid-area: contact-heading;
+}
+
+#contact-tickets{
+  grid-area: contact-tickets;
+}
+
+#contact-support{
+  grid-area: contact-support;
+}
+
+#contact-location{
+  grid-area: contact-location;
+}
+
+#contact div{
+  margin-bottom: 15px;
+}
+
+#contact h3, #contact h4, #contact p{
+  margin: 0;
+}
+
+#contact p{
+  font-size: 22px;
 }

@@ -1,6 +1,5 @@
 
 .container{
-  background-color: rgb(225, 225, 225);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 

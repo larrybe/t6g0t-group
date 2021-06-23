@@ -31,6 +31,7 @@ html, body{
 }
 
 body{
+  background-color: rgb(225, 225, 225);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -83,6 +84,6 @@ footer{
   text-align: center;
   box-sizing: border-box;
   padding: 10px;
-  background-color: #705f42;
-  color: #fff;
+  border-top: 2px solid var(--gold-colour);
+  color: var(--gold-colour);
 }
