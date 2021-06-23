@@ -100,20 +100,24 @@ html, body{
   }
   
   .tickets-on-sale a{
+    font-family: 'Trajan-pro', serif;
     display: inline-block;
     box-sizing: border-box;
-    border: 2px solid var(--dark-gold-colour);
-    border-radius: 5px;
     background-color: var(--gold-colour);
     color: #fff;
-    padding: 10px;
+    padding: 15px 32px;
     text-decoration: none;
     transition: background-color .5s, color 1s;
   }
 
   .tickets-on-sale a:hover{
-    background-color: #fff;
-    color: var(--dark-gold-colour);
+    color: #fff;
+    background-color: var(--dark-gold-colour);
+  }
+
+  .tickets-on-sale a:active{
+    color: var(--gold-colour);
+    background-color: var(--dark-gold-colour);
   }
 
   .experiences{

@@ -139,19 +139,24 @@
 }
 
 #booking-submit input{
+  font-family: 'Trajan-pro', serif;
   box-sizing: border-box;
-  border: 2px solid #705f42;
-  border-radius: 5px;
-  background-color: #705f42;
+  border: none;
+  background-color: var(--gold-colour);
   color: #fff;
-  padding: 10px;
+  padding: 15px 32px;
   text-decoration: none;
   transition: background-color .5s, color 1s;
 }
 
 #booking-submit input:hover{
-  background-color: #fff;
-  color: #705f42;
+  color: #fff;
+  background-color: var(--dark-gold-colour);
+}
+
+#booking-submit input:active{
+  color: var(--gold-colour);
+  background-color: var(--dark-gold-colour);
 }
 
 #booking-disclaimer{
