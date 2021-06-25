@@ -10,17 +10,40 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="tickets.css">
+    <script src="interactive.js"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
             <!-- covid warning-->
-            <div id="covid-info">
-                <p>Covid-19 Information
-                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html" target="_blank"> Learn More
-                    </a>
-                </p>
+            <div class="covid-info">
+                <div class="covid-less-info">
+                    <h4>Covid-19 Information
+                            <span id="covid-info-expand">view</span>
+                    </h4>
+                </div>
+                <div class="covid-more-info" id="covid-info" data-covid-info="collapsed">
+                    <div>
+                        <h5>Important Information about Westeros</h5>
+                        <ul>
+                            <li>Based on recent guidance, Westeros has continued to make changes to health and safety measures.</li>
+                            <li>Certain attractions and experiences may be modified or unavailable, limited in capacity and subject to limited availability or closure.</li>
+                            <li>Park hours are subject to change.</li>
+                            <li>Park admission may not be guaranteed.</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <h5>Covid-19 Warning</h5>
+                        <p>An inherent risk of exposure to COVID-19 exists in any public place where people are present.
+                        <a href="https://covid-19.hscni.net/"
+                            target="_blank">
+                            Learn More
+                        </a>
+                        </p>
+                    </div>
+                </div>
             </div>
             <!--logo pic-->
             

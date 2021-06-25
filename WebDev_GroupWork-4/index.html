@@ -11,20 +11,43 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="index.css">
+    <script src="interactive.js"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
             <!-- covid warning-->
-            <div id="covid-info">
-                <p>Covid-19 Information
-                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html" target="_blank"> Learn More
-                    </a>
-                </p>
+            <div class="covid-info">
+                <div class="covid-less-info">
+                    <h4>Covid-19 Information
+                            <span id="covid-info-expand">view</span>
+                    </h4>
+                </div>
+                <div class="covid-more-info" id="covid-info" data-covid-info="collapsed">
+                    <div>
+                        <h5>Important Information about Westeros</h5>
+                        <ul>
+                            <li>Based on recent guidance, Westeros has continued to make changes to health and safety measures.</li>
+                            <li>Certain attractions and experiences may be modified or unavailable, limited in capacity and subject to limited availability or closure.</li>
+                            <li>Park hours are subject to change.</li>
+                            <li>Park admission may not be guaranteed.</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <h5>Covid-19 Warning</h5>
+                        <p>An inherent risk of exposure to COVID-19 exists in any public place where people are present.
+                        <a href="https://covid-19.hscni.net/"
+                            target="_blank">
+                            Learn More
+                        </a>
+                        </p>
+                    </div>
+                </div>
             </div>
             <!--logo pic-->
-            
+
 
             <!--navigation bar including all 3 pages and a search box-->
             <nav>
@@ -32,7 +55,8 @@
                     <!-- <img src="assets/logo.png" alt="game of thrones logo"> -->
                     <svg width="168" height="42">
                         <title>Westeros Northern Ireland logo</title>
-                        <desc>Westeros Northern Ireland logo of black celtic font spelling Westeros Northern Ireland</desc>
+                        <desc>Westeros Northern Ireland logo of black celtic font spelling Westeros Northern Ireland
+                        </desc>
                         <text x="0" y="27" style="font-size: 25.5px;">
                             Westeros
                         </text>
@@ -54,7 +78,7 @@
         <main>
             <!-- center of the page with key attraction and description -->
             <div class="main-hero">
-                <img src="assets/redkeep.jpeg"  alt="Picture of the Red Keep">
+                <img src="assets/redkeep.jpeg" alt="Picture of the Red Keep">
                 <h1>Welcome to Westeros</h1>
                 <p class="description">Enter the World of <span>Game of Thrones</span></p>
             </div>
@@ -70,10 +94,10 @@
                 <h2 class="experience-heading">What to know before you go.</h2>
                 <div class="experience-detail experience-grid-3" id="wtkDetail1">
                     <h3>The most immersive Game of Thrones experience yet.</h3>
-                    <p>Planned and built by the people who brought you the most famous TV series of 
-                        all time, Westeros Northern Ireland places you in the fantastical and thrilling 
-                        world of Game of Thrones. Built within minutes of many of the filming 
-                        locations used in the production of the TV series Westeros Northern Ireland 
+                    <p>Planned and built by the people who brought you the most famous TV series of
+                        all time, Westeros Northern Ireland places you in the fantastical and thrilling
+                        world of Game of Thrones. Built within minutes of many of the filming
+                        locations used in the production of the TV series Westeros Northern Ireland
                         will feel familiar to all fans of the show.</p>
                 </div>
                 <div class="experience-detail experience-grid-5" id="wtkDetail2">
@@ -85,8 +109,10 @@
                     </p>
                     <a href="parks_tickets.html">Make A Reservation</a>
                 </div>
-                <img src="assets/d7.jpeg" alt="Picture of an informational sign about Game of Thrones" id="wtkImg1" class="experience-grid-4">
-                <img src="assets/Presse_Phantasialand_mystery.jpeg" alt="Picture of roller coaster" id="wtkImg2" class="experience-grid-1">
+                <img src="assets/d7.jpeg" alt="Picture of an informational sign about Game of Thrones" id="wtkImg1"
+                    class="experience-grid-4">
+                <img src="assets/Presse_Phantasialand_mystery.jpeg" alt="Picture of roller coaster" id="wtkImg2"
+                    class="experience-grid-1">
                 <img src="assets/dragons.jpeg" alt="picture of dragons" id="wtkImg3" class="experience-grid-2">
             </div>
 
@@ -94,43 +120,44 @@
             <div id="attractions" class="experiences">
                 <h2 class="experience-heading">Experiences and Attractions</h2>
                 <div class="attraction experience-grid-1" id="wildfire-show">
-                    <!-- <video loop autoplay muted>
+                    <video muted data-repeats="0" poster="assets/wildfire.jpeg">
                         <source src="assets/wildfireworks.mp4" type="video/mp4">
                         <img src="assets/wildfire.jpeg" alt="wildfire explosion" id="wildfire-img">
-                    </video> -->
-                    <img src="assets/wildfire.jpeg" alt="wildfire explosion" id="wildfire-img">
+                    </video>
+                    <!-- <img src="assets/wildfire.jpeg" alt="wildfire explosion" id="wildfire-img"> -->
                     <div id="wildfire-show-desc">
-                    <h3>The WildFireWorks Show</h3>
-                    <p>Every Saturday night. Experience being at the Battle of the Blackwater with the
-                        most spectacular and innovative fireworks show on earth.</p>
+                        <h3>The WildFireWorks Show</h3>
+                        <p>Every Saturday night. Experience being at the Battle of the Blackwater with the
+                            most spectacular and innovative fireworks show on earth.</p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-2" id="axe-throw">
                     <img src="assets/axe01.jpeg" alt="Tyrion's Axe Throw" id="axe-throw-img">
                     <div>
-                    <h3>Tyrion's Axe Throw</h3>
-                    <p>Learn to weild the weapon of choice for Tyrion Lannister.</p>
+                        <h3>Tyrion's Axe Throw</h3>
+                        <p>Learn to weild the weapon of choice for Tyrion Lannister.</p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-3" id="purple-wedding">
                     <img src="assets/GoTPurpleWedding.jpeg" alt="Scene from the purple wedding" id="purple-wedding-img">
                     <div>
-                    <h3>Purple Wedding Reinactment</h3>
-                    <p>Be a guest at the second most memorable wedding in TV history.</p>
+                        <h3>Purple Wedding Reinactment</h3>
+                        <p>Be a guest at the second most memorable wedding in TV history.</p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-4" id="archery-winterfell">
-                    <img src="assets/archery-at-winterfell.jpeg" alt="archery at winterfell experience" id="archery-winterfell-img">
+                    <img src="assets/archery-at-winterfell.jpeg" alt="archery at winterfell experience"
+                        id="archery-winterfell-img">
                     <div>
-                    <h3>Archery at Winterfell</h3>
-                    <p>Have an Archery lesson from Winterfell's master-at-arms.</p>
+                        <h3>Archery at Winterfell</h3>
+                        <p>Have an Archery lesson from Winterfell's master-at-arms.</p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-5" id="dark-hedges">
                     <img src="assets/hedges.jpeg" alt="dark hedges" id="dark-hedges-img">
                     <div>
-                    <h3>Dark Hedges Tunnel</h3>
-                    <p>Walk from the Red Keep to Winterfell through this scenic tunnel.</p>
+                        <h3>Dark Hedges Tunnel</h3>
+                        <p>Walk from the Red Keep to Winterfell through this scenic tunnel.</p>
                     </div>
                 </div>
             </div>
@@ -139,23 +166,27 @@
             <!-- Using the Taron roller coaster at Phantasialand Germany.-->
             <div id="drogon">
                 <h2>Ride The Drogon&trade;</h2>
-                <img src="assets/coaster.jpeg" alt="Picture of roller coaster" id="drogon-img">              
-                <p class="experience-detail">The Drogon&trade; is a roller coaster designed and engineered to minic the 
+                <img src="assets/coaster.jpeg" alt="Picture of roller coaster" id="drogon-img">
+                <p class="experience-detail">The Drogon&trade; is a roller coaster designed and engineered to minic the
                     experience of riding on the back of a dragon.</p>
             </div>
 
             <!-- Authentic et Tour -->
             <div id="set-tour" class="experiences">
                 <h2 class="experience-heading">Authentic Set Tour</h2>
-                <p class="experience-grid-5 experience-detail">The sets used in the filming of the TV show have been 
+                <p class="experience-grid-5 experience-detail">The sets used in the filming of the TV show have been
                     rebuilt at Westeros Northern Ireland. Walk through the same sets used by
                     the actors and production crew of Game of Thrones. The same props and
                     customes used by the actors are also here.
                 </p>
-                <img src="assets/set-map-room.jpeg" alt="Picture of the map room set" id="set-map-room" class="experience-grid-1">
-                <img src="assets/costume-tywin.jpeg" alt="Picture of Tywin Lannister costume" id="costume-tywin" class="experience-grid-4">
-                <img src="assets/costume-daenerys.jpeg" alt="Picture of Daenerys Targaryen Costume" id="costume-daenerys" class="experience-grid-3">
-                <img src="assets/props-sword.jpeg" alt="Picture of sword props" id="props-sword" class="experience-grid-2">
+                <img src="assets/set-map-room.jpeg" alt="Picture of the map room set" id="set-map-room"
+                    class="experience-grid-1">
+                <img src="assets/costume-tywin.jpeg" alt="Picture of Tywin Lannister costume" id="costume-tywin"
+                    class="experience-grid-4">
+                <img src="assets/costume-daenerys.jpeg" alt="Picture of Daenerys Targaryen Costume"
+                    id="costume-daenerys" class="experience-grid-3">
+                <img src="assets/props-sword.jpeg" alt="Picture of sword props" id="props-sword"
+                    class="experience-grid-2">
                 <!-- <img src="assets/menu.jpeg" alt="Picture of menu" id="dining-menu"> -->
             </div>
 
@@ -163,11 +194,13 @@
             <div id="dining" class="experiences">
                 <div class="experience-heading">
                     <h2>All Men (& Everyone Else) Must Dine</h2>
-                    <p>Hungry? Then head to any of the three restaurants and dine on a menu 
-                    inspired by, and in some cases directly lifted from the show.</p>
+                    <p>Hungry? Then head to any of the three restaurants and dine on a menu
+                        inspired by, and in some cases directly lifted from the show.</p>
                 </div>
-                <img src="assets/direwolf-pastry.jpeg" alt="Direwolf pastry picture" id="direwolf-pastry" class="experience-grid-1">
-                <img src="assets/dining-table.jpeg" alt="Dining Area picture" id="dining-table" class="experience-grid-2">
+                <img src="assets/direwolf-pastry.jpeg" alt="Direwolf pastry picture" id="direwolf-pastry"
+                    class="experience-grid-1">
+                <img src="assets/dining-table.jpeg" alt="Dining Area picture" id="dining-table"
+                    class="experience-grid-2">
                 <img src="assets/pudding.jpeg" alt="Picture of pudding" id="pudding" class="experience-grid-3">
                 <img src="assets/serving.jpeg" alt="Serving of food" id="food-serving" class="experience-grid-4">
                 <img src="assets/menu.jpeg" alt="Picture of menu" id="dining-menu" class="experience-grid-5">
@@ -231,7 +264,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </main>
 
         <footer>

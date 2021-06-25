@@ -16,9 +16,9 @@
 #call-to-action-1{
   grid-area: call-to-action-1;
   /* background: linear-gradient(270deg, #323232 60%, #b38c4a00 100%); */
-  background-color: #323232;
+  background-color: rgba(50, 50, 50, 1);
   text-align: center;
-  color: #B38C4A;
+  color: rgba(179, 140, 74, 1);
   
 }
 
@@ -50,15 +50,15 @@
   font-family: "trajan-color", "Trajan-pro" ,serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--gold-colour);
-  text-shadow: 0 0 2px var(--dark-gold-colour);
+  color: rgba(179, 140, 74, 1);
+  text-shadow: 0 0 2px rgba(112, 95, 66, 1);
 }
 
 #call-to-action-2{
   grid-area: call-to-action-2;
   text-align: center;
-  background-color: #323232;
-  color: #B38C4A;
+  background-color: rgba(50, 50, 50, 1);
+  color: rgba(179, 140, 74, 1);
 }
 
 #call-to-action-2 p{
@@ -141,7 +141,7 @@
   font-family: 'Trajan-pro', serif;
   box-sizing: border-box;
   border: none;
-  background-color: var(--gold-colour);
+  background-color: rgba(179, 140, 74, 1);
   color: #fff;
   padding: 15px 32px;
   text-decoration: none;
@@ -149,13 +149,13 @@
 }
 
 #booking-submit input:hover{
-  color: #fff;
-  background-color: var(--dark-gold-colour);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(112, 95, 66, 1);
 }
 
 #booking-submit input:active{
-  color: var(--gold-colour);
-  background-color: var(--dark-gold-colour);
+  color: rgba(179, 140, 74, 1);
+  background-color: rgba(112, 95, 66, 1);
 }
 
 #booking-disclaimer{
@@ -197,34 +197,6 @@
   margin: 0;
 
   text-align: center;
-}
-
-.topnav
-{
-	 font-size: 30px;
-}
-
-.heros
-{
-   font-size: 30px;
-}
-
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
 }
 
 /* Style the collapsible content. Note: hidden by default */

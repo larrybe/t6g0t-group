@@ -1,8 +1,8 @@
 /* Using css variables be can update a lot of properties at once */
 /* https://www.w3schools.com/css/css3_variables.asp */
 :root {
-  --gold-colour: #B38C4A;
-  --dark-gold-colour: #705f42;
+  --gold-colour: rgba(179, 140, 74, 1);
+  --dark-gold-colour: rgba(112, 95, 66, 1);
 }
 
 /* Font Delarations */
@@ -32,14 +32,14 @@ html, body{
 
 body{
   background-color: rgb(225, 225, 225);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "helvetica", "arial", sans-serif;
 }
 
 .container h1, .container h2, .container h3, 
 .container h4, .container h5, .container h6,
 main h1, main h2, main h3, 
 main h4, main h5, main h6{
-  font-family: 'Trajan-pro', serif;
+  font-family: "Trajan-pro", "Garamond", serif;
 }
 
 /* ----------------------- */
@@ -54,36 +54,10 @@ main h4, main h5, main h6{
    font-size: 30px;
 }
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
 footer{
   text-align: center;
   box-sizing: border-box;
   padding: 10px;
-  border-top: 2px solid var(--gold-colour);
-  color: var(--gold-colour);
+  border-top: 2px solid rgba(179, 140, 74, 1);
+  color: rgba(179, 140, 74, 1);
 }
