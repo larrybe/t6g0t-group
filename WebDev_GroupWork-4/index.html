@@ -21,7 +21,7 @@
             <div class="covid-info">
                 <div class="covid-less-info">
                     <h4>Covid-19 Information
-                            <span id="covid-info-expand">view</span>
+                            <span id="covid-info-expand">View</span>
                     </h4>
                 </div>
                 <div class="covid-more-info" id="covid-info" data-covid-info="collapsed">
@@ -120,7 +120,7 @@
             <div id="attractions" class="experiences">
                 <h2 class="experience-heading">Experiences and Attractions</h2>
                 <div class="attraction experience-grid-1" id="wildfire-show">
-                    <video muted data-repeats="0" poster="assets/wildfire.jpeg">
+                    <video muted data-play-count=0 data-max-replays=2 poster="assets/wildfire.jpeg">
                         <source src="assets/wildfireworks.mp4" type="video/mp4">
                         <img src="assets/wildfire.jpeg" alt="wildfire explosion" id="wildfire-img">
                     </video>
@@ -166,7 +166,10 @@
             <!-- Using the Taron roller coaster at Phantasialand Germany.-->
             <div id="drogon">
                 <h2>Ride The Drogon&trade;</h2>
-                <img src="assets/coaster.jpeg" alt="Picture of roller coaster" id="drogon-img">
+                <video muted data-play-count=0 data-max-replays=1 poster="assets/coaster.jpeg" id="drogon-vid">
+                    <source src="assets/drogon.mp4" type="video/mp4">
+                    <img src="assets/coaster.jpeg" alt="Picture of roller coaster" id="drogon-img">
+                </video>
                 <p class="experience-detail">The Drogon&trade; is a roller coaster designed and engineered to minic the
                     experience of riding on the back of a dragon.</p>
             </div>

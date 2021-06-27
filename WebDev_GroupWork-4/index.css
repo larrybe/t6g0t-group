@@ -235,8 +235,15 @@ html, body{
     color: rgba(255, 255, 255, 1);
 }
 
+#drogon video{
+  grid-area: vid;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 #drogon img{
-    grid-area: vid;
+    /* grid-area: vid; */
     width: 100%;
     height: 100%;
     object-fit: cover;
