@@ -1,0 +1,209 @@
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "call-to-action-1"
+    "tickets-hero"
+    "call-to-action-2"
+    "booking-promos"
+    "booking-area"
+    "booking-disclaimer"
+    "booking-help";
+}
+
+#call-to-action-1{
+  grid-area: call-to-action-1;
+  /* background: linear-gradient(270deg, #323232 60%, #b38c4a00 100%); */
+  background-color: rgba(50, 50, 50, 1);
+  text-align: center;
+  color: rgba(179, 140, 74, 1);
+  
+}
+
+#call-to-action-1 p{
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+}
+
+#tickets-hero{
+  grid-area: tickets-hero;
+  text-align: center;
+  display: grid;
+}
+
+#tickets-hero img{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#tickets-hero h1{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 6%;
+  font-size: 48px;
+  font-family: "trajan-color", "Trajan-pro" ,serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(179, 140, 74, 1);
+  text-shadow: 0 0 2px rgba(112, 95, 66, 1);
+}
+
+#call-to-action-2{
+  grid-area: call-to-action-2;
+  text-align: center;
+  background-color: rgba(50, 50, 50, 1);
+  color: rgba(179, 140, 74, 1);
+}
+
+#call-to-action-2 p{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+}
+
+#booking-promos{
+  grid-area: booking-promos;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr 10%;
+  grid-template-areas: 
+    ". promo-one promo-two promo-three .";
+}
+
+#booking-promos > div{
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+#booking-promos img{
+  width: 98%;
+}
+
+#booking-promos h4, #booking-promos p{
+  margin: 0;
+}
+
+#promo-one{
+  grid-area: promo-one;
+  padding-right: 2%;
+}
+
+#promo-two{
+  grid-area: promo-two;
+  box-sizing: content-box;
+  border-color: #d1d1d1;
+  border-width: 1px;
+  border-style: none solid none solid;
+  padding: 0 2%;
+}
+
+#promo-three{
+  grid-area: promo-three;
+  padding-left: 2%;
+}
+
+#booking-area{
+  grid-area: booking-area;
+  display: grid;
+  grid-template-columns: 10% 50% 30% 10%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    ". tickets tickets ."
+    ". form summary ."
+    ". submit . .";
+}
+
+#booking-area h3{
+  text-align: center;
+  grid-area: tickets;
+}
+
+#booking-form-div{
+  grid-area: form;
+}
+
+#booking-summary{
+  grid-area: summary;
+}
+
+#booking-submit{
+  grid-area: submit;
+}
+
+#booking-submit input{
+  font-family: 'Trajan-pro', serif;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgba(179, 140, 74, 1);
+  color: #fff;
+  padding: 15px 32px;
+  text-decoration: none;
+  transition: background-color .5s, color 1s;
+}
+
+#booking-submit input:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(112, 95, 66, 1);
+}
+
+#booking-submit input:active{
+  color: rgba(179, 140, 74, 1);
+  background-color: rgba(112, 95, 66, 1);
+}
+
+#booking-disclaimer{
+  grid-area: booking-disclaimer;
+  display: grid;
+  justify-items: center;
+  margin: 20px 0;
+  padding: 10px 0;
+  padding: 2% 0;
+}
+
+#booking-disclaimer h3{
+  padding-top: 2%;
+  border-top: 1px solid #d1d1d1;
+}
+
+#booking-disclaimer > *{
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#booking-help{
+  grid-area: booking-help;
+  display: grid;
+  justify-items: center;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+#booking-help h3{
+  padding-top: 2%;
+  border-top: 1px solid #d1d1d1;
+}
+
+#booking-help > *{
+  width: 80%;
+  margin: 0;
+
+  text-align: center;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+

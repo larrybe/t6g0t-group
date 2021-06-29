@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="168mm"
+   height="42mm"
+   viewBox="0 0 168 42"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   sodipodi:docname="westeros.svg"
+   inkscape:export-filename="/Users/brobbey/Documents/larry/uol/web-dev/westeros-logo-high-res.png"
+   inkscape:export-xdpi="635.56964"
+   inkscape:export-ydpi="635.56964">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0228621"
+     inkscape:cx="302.24615"
+     inkscape:cy="164.81264"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g888"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1252"
+     inkscape:window-height="937"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g888">
+      <g
+         id="g894">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;fill:#2a2a57;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="2.2678583"
+           y="27.214275"
+           id="text844"><tspan
+             sodipodi:role="line"
+             id="tspan842"
+             x="2.2678583"
+             y="27.214275"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'Game of Thrones';-inkscape-font-specification:'Game of Thrones';fill:#2a2a57;fill-opacity:1;stroke-width:0.264583">WESTEROS</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:9.87778px;line-height:1.25;font-family:sans-serif;fill:#2a2a57;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="21.922617"
+           y="39.309528"
+           id="text848"><tspan
+             sodipodi:role="line"
+             id="tspan846"
+             x="21.922617"
+             y="39.309528"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Game of Thrones';-inkscape-font-specification:'Game of Thrones';fill:#2a2a57;fill-opacity:1;stroke-width:0.264583">NORTHERN IRELAND</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
