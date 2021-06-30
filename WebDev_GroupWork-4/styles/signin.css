@@ -254,16 +254,13 @@
   }
   .footer {
       background-color: RGB(224, 224, 224);
-      
-      
-        position: fixed;
-        margin-top: 2%;
-        height: 50 width: 100%;
-        text-align: left;
-        font-size: 0.8em;
-        bottom: 0;
-      
-      
+      position: fixed;
+      margin-top: 2%;
+      height: 50;
+      width: 100%;
+      text-align: left;
+      font-size: 0.8em;
+      bottom: 0;
     }
     .footer ul {
       list-style-type: none;
