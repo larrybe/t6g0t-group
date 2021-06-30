@@ -11,8 +11,7 @@
 }
 .sign-section {
   grid-area: left;
-  overflow: visible;
-  
+  overflow: visible; 
      
 }
 
