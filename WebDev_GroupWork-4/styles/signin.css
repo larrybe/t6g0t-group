@@ -23,7 +23,7 @@
 }
 
 .hero {
-  background-image: url('media/castle.jpg');
+  background-image: url('../media/castle.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
@@ -238,7 +238,7 @@
   /* The Logo */
   @font-face {
     font-family: "Game of Thrones";
-    src: url("fonts/GameOfThrones.ttf")
+    src: url("../fonts/GameOfThrones.ttf")
   }
 
   .logo svg{

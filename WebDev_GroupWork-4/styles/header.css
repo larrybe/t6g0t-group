@@ -28,6 +28,14 @@
     cursor: default;
   }
 
+  .logo svg text.logo-text {
+    font-size: 25.5px;
+  }
+
+  .logo svg text.logo-text-h {
+    font-size: 11px;
+  }
+
   .logo{
     grid-row: 1;
     grid-column: 1;
