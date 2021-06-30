@@ -238,7 +238,7 @@
   /* The Logo */
   @font-face {
     font-family: "Game of Thrones";
-    src: url("assets/GameOfThrones.ttf")
+    src: url("fonts/GameOfThrones.ttf")
   }
 
   .logo svg{
