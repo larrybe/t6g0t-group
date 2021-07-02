@@ -97,7 +97,7 @@
 #promo-two{
   grid-area: promo-two;
   box-sizing: content-box;
-  border-color: #d1d1d1;
+  border-color: rgba(209, 209, 209, 1);
   border-width: 1px;
   border-style: none solid none solid;
   padding: 0 2%;
@@ -142,7 +142,7 @@
   box-sizing: border-box;
   border: none;
   background-color: rgba(179, 140, 74, 1);
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   padding: 15px 32px;
   text-decoration: none;
   transition: background-color .5s, color 1s;

@@ -84,7 +84,7 @@ html, body{
     box-sizing: border-box;
     background-color: rgba(179, 140, 74, 1);
     border: 1px solid rgba(179, 140, 74, 1);
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     padding: 15px 32px;
     text-decoration: none;
     transition: background-color .5s, border .5s, color 1s;
@@ -140,11 +140,11 @@ html, body{
 
   #wtkDetail2{
     background-color: rgba(112, 95, 66, 1);
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
   }
 
   #wtkDetail2 a{
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
   }
 
   .experience-detail{
@@ -220,7 +220,7 @@ html, body{
 #drogon p{
     grid-area: desc;
     padding: 5%;
-    background-color: #0f0f0f;
+    background-color: rgba(15, 15, 15, 1);
     color: rgba(255, 255, 255, 1);
 }
 
@@ -237,8 +237,8 @@ html, body{
 
 #set-tour p{
   padding: 5%;
-  background-color: #705;
-  color: #FFF;
+  background-color: rgba(119, 0, 85, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 #dining{
@@ -261,17 +261,12 @@ html, body{
   box-sizing: border-box;
 }
 
-#shop div img, #shop div p{
-  grid-column: 1;
-  grid-row: 1;
-  text-align: center;
-}
-
 #shop div p{
-  color: #fff;
-  text-shadow: 0 0 5px #000;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
   margin: 0;
   padding: 5%;
+  z-index: 1;
 }
 
 #shop h2{
@@ -282,13 +277,39 @@ html, body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
 }
 
-#hbo-banner{
+#shop a{
+  display: grid;
+  color: rgba(255, 255, 255, 1);
+}
+
+#shop a:hover img{
+  filter: brightness(0.5)
+}
+
+#shop a:hover h3{
+  opacity: 1;
+}
+
+#shop h3{
+  justify-self: center;
+  align-self: center;
+  opacity: 0;
+  z-index: 2;
+}
+
+#shop a > *, #shop a div > *{
+  grid-area: 1/1;
+  text-align: center;
+}
+
+#hbo-banner-link{
     grid-area: hbo-banner;
 }
 
-#complete-collection{
+#complete-collection-link{
     grid-area: complete-collection;
 }
 
@@ -296,11 +317,12 @@ html, body{
   object-position: 85%;
 }
 
-#collectable{
+#collectable-link{
     grid-area: collectable;
+    overflow: hidden;
 }
 
-#gifts{
+#gifts-link{
     grid-area: gifts;
 }
 
