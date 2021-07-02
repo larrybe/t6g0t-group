@@ -15,7 +15,6 @@
 
 #call-to-action-1{
   grid-area: call-to-action-1;
-  /* background: linear-gradient(270deg, #323232 60%, #b38c4a00 100%); */
   background-color: rgba(50, 50, 50, 1);
   text-align: center;
   color: rgba(179, 140, 74, 1);
@@ -112,12 +111,12 @@
 #booking-area{
   grid-area: booking-area;
   display: grid;
-  grid-template-columns: 10% 50% 30% 10%;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: 
-    ". tickets tickets ."
-    ". form summary ."
-    ". submit . .";
+    "tickets"
+    "form"
+    "submit";
 }
 
 #booking-area h3{
@@ -127,14 +126,15 @@
 
 #booking-form-div{
   grid-area: form;
-}
-
-#booking-summary{
-  grid-area: summary;
+  display: grid;
+  justify-items: center;
 }
 
 #booking-submit{
   grid-area: submit;
+  display: grid;
+  justify-items: center;
+  padding-top: 15px;
 }
 
 #booking-submit input{
@@ -167,9 +167,9 @@
   padding: 2% 0;
 }
 
-#booking-disclaimer h3{
+#booking-disclaimer h3, #booking-help h3{
   padding-top: 2%;
-  border-top: 1px solid #d1d1d1;
+  border-top: 1px solid rgb(209, 209, 209);
 }
 
 #booking-disclaimer > *{
@@ -187,23 +187,8 @@
   padding: 10px 0;
 }
 
-#booking-help h3{
-  padding-top: 2%;
-  border-top: 1px solid #d1d1d1;
-}
-
 #booking-help > *{
   width: 80%;
   margin: 0;
-
   text-align: center;
 }
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-

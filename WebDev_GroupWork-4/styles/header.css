@@ -44,7 +44,6 @@
   .covid-info{
     grid-area: covidInfo;
     justify-items: center;
-    display: grid;
   }
 
   .covid-info div{
