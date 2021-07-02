@@ -101,7 +101,7 @@
   }
 
   
-  nav{
+  .container nav{
     grid-area: navBar;
     display: grid;
     justify-self: center;
@@ -111,7 +111,7 @@
     padding: 4px 0;
   }
 
-  nav ul{
+  .container nav ul{
     justify-self: end;
     list-style-type: none;
     grid-row: 1;
@@ -121,18 +121,18 @@
     font-size: 24px;
   }
   
-  nav ul li{
+  .container nav ul li{
     display: inline-block;
     padding: 0 24px;
   }
   
-  nav ul li a{
+  .container nav ul li a{
     text-decoration: none;
     color: rgba(50, 50, 50, 1);
     transition: color 1s;
   }
   
-  nav ul li a:hover{
+  .container nav ul li a:hover{
     text-decoration: underline;
     color: rgba(0, 0, 0, 1);;
   }
