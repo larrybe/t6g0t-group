@@ -11,14 +11,13 @@
 }
 .sign-section {
   grid-area: left;
-  overflow: visible; 
-     
+  overflow: visible;
 }
 
 .right {
   grid-area: right;
   overflow: scroll;
-  
+  margin: 20px;
 }
 
 .hero {
@@ -78,9 +77,8 @@
 }
 .tabcontent {
   float: right;
-  width: 100%;
-  /*margin: -5% -5% 0  0;*/
- 
+
+  margin: 20px;
   display: none;
   padding: 6px 12px;
   border-top: none;
@@ -89,11 +87,12 @@
 
 
   .gold{
-    color: #B38C4A;
+    color: rgba(179, 140, 74, 1);
   }
+
   input.gold, button.gold{
 
-    background-color: #B38C4A;
+    background-color:rgba(179, 140, 74, 1);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -104,22 +103,29 @@
     font-family: trajan-pro-3, serif;
     
   }
+
+  input.gold:hover, button.gold:hover {
+    background-color:rgba(112, 95, 66, 1);
+  }
+
   #signupform{
     
     background-color: RGB(224, 224, 224);
     color: RGB(59,59,59);
   }
   /*for clear buttons*/
-  .other{
-    
+  .other{  
     border: none;
-    color: white;
+    color: rgb(175, 168, 157);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     font-family: trajan-pro-3, serif;
+  }
+  input.other:hover, button.other:hover {
+    background-color:rgba(112, 95, 66, 1);
   }
   /*separate font for form field placeholders*/
   input.this option.this {
@@ -240,17 +246,7 @@
     src: url("../fonts/GameOfThrones.ttf")
   }
 
-  .logo svg{
-    font-family: "Game of Thrones";
-    /*transform:scale(130%); /* Change the size of the logo. 130% is 30% bigger. */
-  }
-  
-  .logo svg text{
-    fill: rgb(42, 42, 87); /* Colour of the logo */
-    stroke: rgb(59, 59, 59); /* Outline of the logo. Set to "none" to remove the outline. */
-    stroke-width: 0.5px; /* Thickness of the outline */
-    cursor: default;
-  }
+
   .footer {
       background-color: RGB(224, 224, 224);
       position: fixed;

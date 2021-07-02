@@ -5,33 +5,38 @@ I've commented this code for someone of my level of knowledge, a learner who wan
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/xkh1xdx.css">
-    <link rel="stylesheet" href="https://use.typekit.net/xkh1xdx.css">
-    <link rel="stylesheet" href="https://use.typekit.net/xkh1xdx.css">
-    <link rel="stylesheet" type="text/css" href="styles/signin.css">
-		<link rel="stylesheet" type="text/css" href="styles/header.css">
-  	<title>Sign in | Sign up</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Westeros, NIR - The Game of Thrones Theme Park - Sign in | Sign up</title>
+  <meta name="sign-in" content="Sign in page">
+  <link rel="stylesheet" href="https://use.typekit.net/xkh1xdx.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/signin.css">
+  <script src="scripts/signin.js"></script>
+  <script src="scripts/interactive.js"></script>
 </head>
 
 <body>
 <div class="grid-container"><!-- grid container consists of a dramatic greeting, a sign-section on the left of othe page and a hero image on the right.-->
 	
 	<!--header section of grid container of body-->
-  <div class="item header logo">
-  	<svg width="168" height="42">
-		<title>Westeros Northern Ireland logo</title>
-    <desc>Westeros Northern Ireland logo of black celtic font spelling Westeros Northern Ireland</desc>
-    <text x="0" y="27" style="font-size: 25.5px;">
-          Westeros
-    </text>
-    <text x="13" dy="40" style="font-size: 11px;">
-          Northern Ireland
-    </text>
-    </svg>
-  </div>
+  <header>
+    <div class="logo">
+        <svg width="168" height="42">
+            <title>Westeros Northern Ireland logo</title>
+            <desc>Westeros Northern Ireland logo of black celtic font spelling Westeros Northern Ireland</desc>
+            <text x="0" y="27" class="logo-text">
+                Westeros
+            </text>
+            <text x="13" dy="40" class="logo-text-h">
+                Northern Ireland
+            </text>
+        </svg>
+    </div>
+  
+  </header>
   <!--end of header section
     There is no nav bar here so as to streamline the page and focus the user's attention on staying on the page in order to sign in or sign up-->
 
@@ -44,7 +49,7 @@ I've commented this code for someone of my level of knowledge, a learner who wan
 
 	<!-- start of sign-section of grid container of body. The sign-section consists of two tabs. The left tab has a sign-in form, the right tab has a longer sign-up form-->
 <div class="item sign-section">
-	<h2 style="background-color: RGB(192, 192, 192);">Westeros Accounts</h2>
+	<h2>Westeros Accounts</h2>
   <!-- start of tabbed section of sign-section-->
   <div class="tab">
    <button class="tablinks" onclick="openSign(event, 'SignIn')" id="defaultOpen">Sign In</button>
@@ -56,7 +61,7 @@ I've commented this code for someone of my level of knowledge, a learner who wan
 		<!-- Title of sign-in tab -->
   	<h3> Sign in to Westeros</h3>
    	<!-- Sign-in form starts here-->
-  	<form action="http://www.westeros.com/login/"  method="post"><!--action link for sign-in form-->
+  	<form action="#"  method="post"><!--action link for sign-in form-->
     	<!-- Container ("field set") of sign-in form starts here -->
     	<fieldset>   <!-- We used a fieldset to structure a form with multiple fields.This will be enhanced using CSS, but the page layout will be very simple so as not to distract users from signingin-->            
     	<!-- Start of drop down info box for sign in form-->
@@ -95,7 +100,7 @@ I've commented this code for someone of my level of knowledge, a learner who wan
    </div>
    <!-- Start of sign-up form -->  
    <div id="signupform">
-   	<form action="action_page.php"> 
+   	<form action="#"> 
     	<!-- start of fields for entire sign up form (submit button processes create account & delivery address forms simultaneoulsy)-->
       <fieldset>             
 				<!-- Start of optional prefix selector -->
@@ -126,10 +131,10 @@ I've commented this code for someone of my level of knowledge, a learner who wan
             
 					<!-- Remmber me check box for sign up form -->
           <label>
-          	<input  type="checkbox"  name="remember" style="margin-bottom:15px"> Remember me<!-- Puts cookie on user's browser so any user input con form an be stored -->
+          	<input  type="checkbox"  name="remember"> Remember me<!-- Puts cookie on user's browser so any user input con form an be stored -->
           </label>
 					<!-- Send me updates check box-->
-            <input type="checkbox"  name="remember" style="margin-bottom:15px"> Yes, I would like to receive updates and special offers from Westeros Northern Ireland<br>
+            <input type="checkbox"  name="special-offers"> Yes, I would like to receive updates and special offers.<br>
 					<!-- Link to terms and conditions -->        
           <span>By creating an account you agree to our </span><a class="gold" href="#">Terms & Privacy Policy</a>.<br><br>
          
@@ -146,38 +151,12 @@ I've commented this code for someone of my level of knowledge, a learner who wan
       </form>
 			<!-- sign-up form ends-->
      
-			<!-- Link to sign-up video -->   
-         <a href="https://www.facebook.com/pg/Westeros/videos/sign_up_Westeros">Westeros on Facebook page: Watch our simple video: <span class="gold">How to sign up with Westeros</span></a>       
 		</div>
 		<!--sign-up form div ends-->
 	
     </div>
     <!--end of sign-up form html-->
-		<!--javascript to open/close tabs and keep default tab open-->
-		<script>
-            function openSign(evt, signName) {
-                // Declare all variables
-                var i, tabcontent, tablinks;
 
-                // Get all elements with class="tabcontent" and hide them
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-
-                // Get all elements with class="tablinks" and remove the class "active"
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-
-                // Show the current tab, and add an "active" class to the button that opened the tab
-                document.getElementById(signName).style.display = "block";
-                evt.currentTarget.className += " active";
-
-                }
-                document.getElementById("defaultOpen").click();  
-        </script>
 	</div>
 	<!--sign-section ends here-->
 	<!--start of right section which contains only hero photo and chat box-->
@@ -185,7 +164,7 @@ I've commented this code for someone of my level of knowledge, a learner who wan
 	 <!--chatbox based on W3schools.com example "How to Create a Popup Chat"-->
      <button class="open-button" onclick="openForm()">Chat</button>
      	<div class="chat-box" id="messageForm">
-     		<form action="/action_page.php" class="form-container">
+     		<form action="#" class="form-container">
      		<!-- Title of chatbox-->           
       	<h3 class="this">Chat</h3>
         <label for="message"><b>Message</b></label><br>
@@ -197,36 +176,14 @@ I've commented this code for someone of my level of knowledge, a learner who wan
      		</form>
      	</div>
       <!--end of chat box fields-->
-			<!--javascript to open/close/submit/resize chat box-->
-			<script>
-        function openForm() {
-          document.getElementById("messageForm").style.display = "block";
-          }
-                
-         function closeForm() {
-           document.getElementById("messageForm").style.display = "none";
-          }
- 			</script> 
-			<script>
-    		var docWidth = document.documentElement.offsetWidth;
-					[].forEach.call(
-          document.querySelectorAll('*'),
-          function(el) {
-          if (el.offsetWidth > docWidth) {
-           console.log(el);
-           }
-            }
-           );
 
-        </script>
-        <!-- end of chat box javascript -->
     </div>
     <!--end of right section-->   
     <!-- start of footer -->
     <div class="item footer">
         <nav>       
         <a class="lightest" href="index.html">Home</a>
-        <a class="lightest" href="contact.html">Contact</a><!--we need balance between convenience for user but also simplicity/streamlining of log-in page. Some theme park websites (e.g. Disney) have no nav links on sign-in page at all but we think this may frustrate the user.  We put the link at the end of the page as it is a "last resort" for the user.-->
+        <a class="lightest" href="#">Contact</a><!--we need balance between convenience for user but also simplicity/streamlining of log-in page. Some theme park websites (e.g. Disney) have no nav links on sign-in page at all but we think this may frustrate the user.  We put the link at the end of the page as it is a "last resort" for the user.-->
         </nav>
     </div>
     <!-- footer section ends--> 
