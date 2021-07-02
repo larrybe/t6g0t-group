@@ -195,11 +195,6 @@ html, body{
   z-index: 0;
 }
 
-#wildfire-img-overlay{
-  z-index: 1;
-  opacity: 0;
-}
-
 #wildfire-show-desc{
   z-index: 2;
 }
@@ -234,15 +229,6 @@ html, body{
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-#drogon video{
-  z-index: 0;
-}
-
-#drogon img{
-  z-index: 1;
-  opacity: 0;
 }
 
 #set-tour{
