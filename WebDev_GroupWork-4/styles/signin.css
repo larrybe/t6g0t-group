@@ -23,7 +23,7 @@
 .hero {
   background-image: url('../media/castle.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  /* background-attachment: fixed; */
   background-size: cover;
   max-width: 100%;
 }
