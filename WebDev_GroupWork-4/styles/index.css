@@ -324,6 +324,10 @@ html, body{
     grid-area: hbo-banner;
 }
 
+#hbo-banner{
+  object-position: 0 40%;
+}
+
 #complete-collection-link{
     grid-area: complete-collection;
 }
