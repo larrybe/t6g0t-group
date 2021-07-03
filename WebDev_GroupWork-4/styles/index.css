@@ -34,6 +34,7 @@ html, body{
   }
   
   .main-hero{
+    position: relative;
     grid-area: main-hero;
     display: grid;
     margin-top: 0;
@@ -54,7 +55,6 @@ html, body{
   }
   
   .main-hero h1{
-    margin: 10% 0;
     font-size: 46px;
     font-family: "trajan-color", "Trajan-pro", serif;
     font-weight: 400;
@@ -62,18 +62,17 @@ html, body{
     color: rgba(179, 140, 74, 1);
     text-shadow: 0 0 2px rgba(112, 95, 66, 1);
     position: absolute;
-    top: 90px;
+    top: 30px;
     text-align: center;
     width: 100%;
     z-index: 1;
   }
   
   .main-hero p{
-    margin: 13% 0;
     font-size: 34px;
     color: rgba(179, 140, 74, 1);
     position: absolute;
-    top: 110px;
+    top: 75px;
     text-align: center;
     width: 100%;
     z-index: 0;
