@@ -90,12 +90,13 @@ html, body{
   
   .tickets-on-sale a{
     font-family: "Trajan-pro", "Garamond", serif;
+    font-size: 25px;
     display: inline-block;
     box-sizing: border-box;
     background-color: rgba(179, 140, 74, 1);
     border: 1px solid rgba(179, 140, 74, 1);
     color: rgba(255, 255, 255, 1);
-    padding: 15px 32px;
+    padding: 10px 15px;
     text-decoration: none;
     transition: background-color .5s, border .5s, color 1s;
   }
@@ -201,6 +202,12 @@ html, body{
   height: fit-content;
 }
 
+.attraction-desc span{
+  position: relative;
+  display: inline;
+  background-color: rgba(179, 140, 74, 0.5);
+}
+
 #wildfire-show video{
   z-index: 0;
 }
@@ -279,6 +286,11 @@ html, body{
   z-index: 1;
 }
 
+#shop div p span{
+  background-color: rgba(179, 140, 74, 0.4);
+  padding: 2px;
+}
+
 #shop h2{
     grid-area: heading;
 }
@@ -293,6 +305,7 @@ html, body{
 #shop a{
   display: grid;
   color: rgba(255, 255, 255, 1);
+  text-decoration: none;
 }
 
 #shop a:hover img{
@@ -308,6 +321,8 @@ html, body{
   align-self: center;
   opacity: 0;
   z-index: 2;
+  background-color: rgba(179, 140, 74, 1);
+  padding: 10px;
 }
 
 #shop a > *, #shop a div > *{

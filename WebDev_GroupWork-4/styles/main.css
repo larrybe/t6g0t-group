@@ -42,22 +42,10 @@ main h4, main h5, main h6{
   font-family: "Trajan-pro", "Garamond", serif;
 }
 
-/* ----------------------- */
-
-.topnav
-{
-	 font-size: 30px;
-}
-
-.heros
-{
-   font-size: 30px;
-}
-
 footer{
   text-align: center;
   box-sizing: border-box;
   padding: 10px;
-  border-top: 2px solid rgba(179, 140, 74, 1);
-  color: rgba(179, 140, 74, 1);
+  border-top: 2px solid rgba(112, 95, 66, 1);
+  color: rgba(112, 95, 66, 1)
 }
