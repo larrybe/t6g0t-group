@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/interactive.js"></script>
 </head>
 
 <body>
@@ -130,39 +131,41 @@
                 <h2 class="experience-heading">Experiences and Attractions</h2>
                 <div class="attraction experience-grid-1" id="wildfire-show">
                     <img src="media/wildfire.jpeg" alt="wildfire explosion" id="wildfire-img">
-                    <div id="wildfire-show-desc">
-                        <h3>The WildFireWorks Show</h3>
-                        <p>Every Saturday night. Experience being at the Battle of the Blackwater with the
-                            most spectacular and innovative fireworks show on earth.</p>
+                    <!-- A span is placed within each h3 and p of the attraction description 
+                        to be able to provide a background that contrasts with the text colour -->
+                    <div class="attraction-desc" id="wildfire-show-desc">
+                        <h3><span>The WildFireWorks Show</span></h3>
+                        <p><span>Every Saturday night. Experience being at the Battle of the Blackwater with the
+                            most spectacular and innovative fireworks show on earth.</span></p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-2" id="axe-throw">
                     <img src="media/axe01.jpeg" alt="Tyrion's Axe Throw" id="axe-throw-img">
-                    <div>
-                        <h3>Tyrion's Axe Throw</h3>
-                        <p>Learn to weild the weapon of choice for Tyrion Lannister.</p>
+                    <div class="attraction-desc">
+                        <h3><span>Tyrion's Axe Throw</span></h3>
+                        <p><span>Learn to weild the weapon of choice for Tyrion Lannister.</span></p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-3" id="purple-wedding">
                     <img src="media/GoTPurpleWedding.jpeg" alt="Scene from the purple wedding" id="purple-wedding-img">
-                    <div>
-                        <h3>Purple Wedding Reinactment</h3>
-                        <p>Be a guest at the second most memorable wedding in TV history.</p>
+                    <div class="attraction-desc">
+                        <h3><span>Purple Wedding Reinactment</span></h3>
+                        <p><span>Be a guest at the second most memorable wedding in TV history.</span></p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-4" id="archery-winterfell">
                     <img src="media/archery-at-winterfell.jpeg" alt="archery at winterfell experience"
                         id="archery-winterfell-img">
-                    <div>
-                        <h3>Archery at Winterfell</h3>
-                        <p>Have an Archery lesson from Winterfell's master-at-arms.</p>
+                    <div class="attraction-desc">
+                        <h3><span>Archery at Winterfell</span></h3>
+                        <p><span>Have an Archery lesson from Winterfell's master-at-arms.</span></p>
                     </div>
                 </div>
                 <div class="attraction experience-grid-5" id="dark-hedges">
                     <img src="media/hedges.jpeg" alt="dark hedges" id="dark-hedges-img">
-                    <div>
-                        <h3>Dark Hedges Tunnel</h3>
-                        <p>Walk from the Red Keep to Winterfell through this scenic tunnel.</p>
+                    <div class="attraction-desc">
+                        <h3><span>Dark Hedges Tunnel</span></h3>
+                        <p><span>Walk from the Red Keep to Winterfell through this scenic tunnel.</span></p>
                     </div>
                 </div>
             </div>
@@ -226,7 +229,7 @@
                     <div id="complete-collection">
                         <img src="media/limited-edition.jpeg" alt="Get the complete collection">
                         <h3>Visit the HBO Shop</h3>
-                        <p>Get the lmited edition collection</p>
+                        <p><span>Get the lmited edition collection</span></p>
 
                     </div>
                 </a>
@@ -234,14 +237,14 @@
                     <div id="collectable">
                         <img src="media/collectable.png" alt="Exclusive collectables">
                         <h3>Visit the HBO Shop</h3>
-                        <p>Exclusive items only in the shop</p>
+                        <p><span>Exclusive items only in the shop</span></p>
                     </div>
                 </a>
                 <a href="https://shop.hbo.com/collections/game-of-thrones" target="_blank" class="shop-link" id="gifts-link">
                     <div id="gifts">
                         <img src="media/gift.jpeg" alt="Personalized gifts">
                         <h3>Visit the HBO Shop</h3>
-                        <p>Personalized gifts</p>
+                        <p><span>Personalized gifts</span></p>
                     </div>
                 </a>
             </div>
