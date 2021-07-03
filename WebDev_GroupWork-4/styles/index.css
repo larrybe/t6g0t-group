@@ -61,12 +61,22 @@ html, body{
     font-style: normal;
     color: rgba(179, 140, 74, 1);
     text-shadow: 0 0 2px rgba(112, 95, 66, 1);
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
   }
   
   .main-hero p{
     margin: 13% 0;
     font-size: 34px;
     color: rgba(179, 140, 74, 1);
+    position: absolute;
+    top: 110px;
+    text-align: center;
+    width: 100%;
+    z-index: 0;
   }
   
   .tickets-on-sale{
