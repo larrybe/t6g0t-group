@@ -1,3 +1,8 @@
+/* index.css deals with the styling of elements specifically on index.html */
+
+/* Setting margin and padding to 0 and 
+  width/height to 100 makes sure that child 
+  elements of body can make use of the whole screen.  */
 html, body{
     margin: 0;
     padding: 0;
@@ -5,6 +10,8 @@ html, body{
     height: 100%;
   }
   
+  /* The main grid of the index page. 
+    Positions <header> and everything below <header> minus <footer>. */
   .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -13,7 +20,7 @@ html, body{
       "main";
   }
   
-  
+  /* The grid of everything in <main> */
   main{
     grid-area: main;
     grid-template-columns: 1fr;
@@ -29,10 +36,12 @@ html, body{
       "contact";
   }
 
+  /* All child <div>s (but no further descendants) a top and bottom margin of 30px  */
   main > div{
     margin: 30px 0;
   }
   
+  /* The hero element. The part of the page that has the picture of the red keep */
   .main-hero{
     position: relative;
     grid-area: main-hero;
@@ -110,9 +119,18 @@ html, body{
     background-color: rgba(112, 95, 66, 1);
   }
 
+  /* The grid layout of #what-to-know, #attractions, #set-tour and #dining */
+  /* It is a grid with 5 columns and 3 rows */
   .experiences{
     display: grid;
+    /* The first and last columns each serve as a margin of 10% of window width 
+     * The three middle columns are each ~26.67% wide */
     grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
+    /* The first row is of automatic height and spans the entire width of the grid 
+       and contains the heading 
+     * The second row has two boxes of the same height with one (exp-grid-1) two 
+       times the width of the other (exp-grid-2)
+     * The third row has three boxes (exp-grid-3 to 5) of equal size */
     grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
     grid-template-areas:
         ". experience-heading experience-heading experience-heading ." 
@@ -120,26 +138,32 @@ html, body{
         ". experience-grid-3 experience-grid-4 experience-grid-5 .";
   }
 
+  /* Takes up the entire width in the first row */
   .experience-heading{
     grid-area: experience-heading;
   }
-
+  
+  /* The first two columns in the middle row */
   .experience-grid-1{
     grid-area: experience-grid-1;
   }
 
+  /* The last column in the middle row */
   .experience-grid-2{
     grid-area: experience-grid-2;
   }
 
+  /* The first column in the last row */
   .experience-grid-3{
     grid-area: experience-grid-3;
   }
 
+  /* The second column in the last row */
   .experience-grid-4{
     grid-area: experience-grid-4;
   }
 
+  /* The third column in the last row */
   .experience-grid-5{
     grid-area: experience-grid-5;
   }
@@ -157,26 +181,28 @@ html, body{
     color: rgba(255, 255, 255, 1);
   }
 
+  /* Give the text description of the experience a padding of 5% to the left and right */
   .experience-detail{
     margin: 0;
     padding: 0 5%;
   }
 
-.experiences img, .experiences video{
+  /* This ensures that <img> fill up the entire grid box without distorting its aspect ratio */
+  .experiences img, .experiences video{
       width: 100%;
       height: 100%;
       object-fit: cover;
   }
 
-#attractions{
+  #attractions{
     grid-area: attractions;
-}
+  }
 
-#attractions p, #attractions h3{
+  #attractions p, #attractions h3{
   color: rgba(255, 255, 255, 1);
   text-shadow: 0 0 5px rgba(0, 0, 0, 1);
   margin: 0;
-}
+  }
 
 #attractions h3{
   padding: 1.3vw;
@@ -191,7 +217,9 @@ html, body{
     display: grid;
 }
 
-.attraction img, .attraction video, .attraction div{
+/* This makes the <img> of the attraction and its description share the same grid. 
+   z-index is used to place the description on top of the image. */
+.attraction img, .attraction div{
     grid-column: 1;
     grid-row: 1;
 }
@@ -201,24 +229,25 @@ html, body{
   height: fit-content;
 }
 
+/* This sets a background colour for the text on top of the image.
+   This is to provide contrast between the text and the image */
 .attraction-desc span{
   position: relative;
   display: inline;
   background-color: rgba(179, 140, 74, 0.5);
 }
 
-#wildfire-show video{
-  z-index: 0;
-}
-
 #wildfire-show-desc{
-  z-index: 2;
+  z-index: 1;
 }
 
 #axe-throw-img{
   object-position: 15%;
 }
 
+/* The grid layout for the drogon rollercoaster experience. 
+ * The size and design is similar to the experience grid but it 
+   lacks the third row.*/
 #drogon{
     grid-area: drogon;
     display: grid;
@@ -226,13 +255,15 @@ html, body{
     grid-template-rows: auto calc((160vw / 3) / 2.01);
     grid-template-areas: 
         ". header header header ."
-        ". vid vid desc .";
+        ". img img desc .";
 }
 
+/* The heaer takes up the entire first row of the grid */
 #drogon h2{
     grid-area: header;
 }
 
+/* The text description occupies the third column in the second row */
 #drogon p{
     grid-area: desc;
     padding: 5%;
@@ -240,8 +271,9 @@ html, body{
     color: rgba(255, 255, 255, 1);
 }
 
-#drogon video, #drogon img{
-  grid-area: vid;
+/* The image occupies the first two columns of the second row of the grid */
+#drogon img{
+  grid-area: img;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -261,11 +293,15 @@ html, body{
     grid-area: dining;
 }
 
+/* The grid for the shop <div> */ 
 #shop{
     grid-area: shop;
     display: grid;
+    /* It is a 3x5 grid with the first and last columns serving as the left and right margins */
     grid-template-columns: 10vw repeat(3, calc(80vw / 3)) 10vw;
     grid-template-rows: auto calc((160vw / 3) / 2.01) calc(80vw / 3);
+    /* The heading and banner take up the entire width of the first and second rows.
+     * The last row is taken up by three separate elements*/
     grid-template-areas:
         ". heading heading heading ." 
         ". hbo-banner hbo-banner hbo-banner ."
@@ -307,6 +343,8 @@ html, body{
   text-decoration: none;
 }
 
+/* Hovering over a grid element darken the image. 
+ * This was our way of showing that the element is interactive. */
 #shop a:hover img{
   filter: brightness(0.5)
 }
@@ -354,6 +392,8 @@ html, body{
     grid-area: gifts;
 }
 
+/* The grid layout for the contact <div> 
+ * Similar to the drogon grid but rows are automatically sized. */
 #contact{
   grid-area: contact;
   display: grid;
