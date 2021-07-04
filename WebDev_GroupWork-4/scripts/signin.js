@@ -22,13 +22,13 @@ function openSign(evt, signName) {
 
 }
 //Chatbox
-//Opens chatbox
+//Opens Chatbox
 function openForm() {
-    document.getElementById("messageForm").style.display = "block";
+    document.getElementById("msgForm").style.display = "block";
 }
 //Closes chatbox by hiding it      
 function closeForm() {
-    document.getElementById("messageForm").style.display = "none";
+    document.getElementById("msgForm").style.display = "none";
 }
 //Finds all elements in page which overhang. This was taken from Chris Coyler, https://css-tricks.com/findingfixing-unintended-body-overflow/ 
 var docWidth = document.documentElement.offsetWidth;
