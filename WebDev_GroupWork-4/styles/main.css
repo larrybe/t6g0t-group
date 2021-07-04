@@ -1,9 +1,8 @@
 /* Using css variables be can update a lot of properties at once */
 /* https://www.w3schools.com/css/css3_variables.asp */
-:root {
-  --gold-colour: rgba(179, 140, 74, 1);
-  --dark-gold-colour: rgba(112, 95, 66, 1);
-}
+
+
+/* colours used are all from the official Game of Thrones guide */
 
 /* Font Delarations */
 @font-face {
